@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.landing_top
+{
+  position: absolute;
+}
+
+#new_york {
+  min-width: 400px;
+  min-height: 300px;
+  width: 99vw;
+  height: 100vh;
+}
+
+#seeker_landing
+{
+  padding-top: 10px;
+  margin-left: 50px;
+  z-index: 10;
+  color: white;
+  font-size: 30px;
+}
+
+.about_us
+{
+  background-color: #FAF3DD;
+  position: absolute;
+  width: 99vw;
+  top: 0;
+  height: 40vh;
+  overflow: hidden;
+  transition: all 1s; 
+  margin-top: 54%;
+  /* padding-top: 6; */
+  border-radius: 10px;
+}
+
+.about_us h2
+{
+  color: black;
+  padding-top: 20px;
+  margin-left: 50px;
+}
