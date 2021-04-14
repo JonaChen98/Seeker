@@ -5,7 +5,7 @@ import LandingAbout from './Landing_Page/LandingAboutUs'
 function App() {
   return (
     <>
-      <LandingPage />
+      <LandingPage  className="page_top" />
       <LandingAbout />
     </>
   );

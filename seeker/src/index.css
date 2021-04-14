@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Spartan', sans-serif; */
+  font-family: 'Raleway', sans-serif;
 }
 
-.landing_top
+.page_top
+{
+  position: relative;
+}
+
+.landing_seeker
 {
   position: absolute;
+  /* font: weight 200px; */
 }
 
 #new_york {
@@ -19,30 +29,79 @@ body {
 
 #seeker_landing
 {
-  padding-top: 10px;
+  margin-top: 45px;
   margin-left: 50px;
   z-index: 10;
   color: white;
-  font-size: 30px;
+  font-size: 28px;
+  font-weight: 200;
+}
+
+#landing_quote{
+  position: absolute;
+  color: white;
+  margin-top: 40vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-size: 3.5em;
+}
+
+#login_button {
+  /* display: inline-block; */
+  min-height: 30px;
+  min-width: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  z-index: 10;
+  margin-left: 83vw;
+  margin-top: 45px;
+  color:white;
+  position: absolute;
+  width: 80px;
+  height: 34px;
+  background: transparent;
+  border: solid 1px white;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+#sign_up
+{
+  min-width: 10px;
+  /* display: inline-block; */
+  /* float:left; */
+  min-height: 30px;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  z-index: 10;
+  margin-left: 89vw;
+  margin-top: 45px;
+  color:white;
+  position: absolute;
+  width: 80px;
+  height: 34px;
+  font-size: 12px;
+  background: #FFA69E;
+  border: solid 1px #FFA69E;
+  border-radius: 13px;
 }
 
 .about_us
 {
   background-color: #FAF3DD;
-  position: absolute;
+  position:relative;
   width: 99vw;
   top: 0;
   height: 40vh;
   overflow: hidden;
   transition: all 1s; 
-  margin-top: 54%;
-  /* padding-top: 6; */
+  margin-top: -50px;
   border-radius: 10px;
 }
 
 .about_us h2
 {
   color: black;
-  padding-top: 20px;
-  margin-left: 50px;
+  padding-top: 30px;
+  padding-left: 60px;
 }

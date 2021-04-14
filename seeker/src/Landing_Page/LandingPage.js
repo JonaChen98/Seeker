@@ -7,9 +7,12 @@ export default function LandingPage()
 {
     return(
         <>
-            <div className="page_top">
-                <p className ="landing_top" id="seeker_landing">Seeker</p>
-                <img className="landing_top" id="new_york" src={new_york}/>
+            <div>
+                <p className ="landing_seeker" id="seeker_landing">Seeker</p>
+                <button id ="login_button">Login</button>
+                <button id ="sign_up">Sign Up</button>
+                <h1 id="landing_quote">Everything's better with friends</h1>
+                <img id="new_york" src={new_york}/>
             </div>
         </>
     )
