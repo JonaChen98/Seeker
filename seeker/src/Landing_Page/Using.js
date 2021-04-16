@@ -19,10 +19,22 @@ export default function Using()
             <h2>Using Seeker</h2>
                 <Fade left cascade>
                 <div id="four_imgs">
-                    <div id="eeee"><img id="first_img" src={newyork} /></div>
-                    <div id="eeee"><img id="second_img" src={twopeople} /></div>
-                    <div id="eeee"><img id="third_img" src={display} /></div>
-                    <div id="eeee"><img id="fourth_img" src={hands} /></div>
+                    <div id="eeee">
+                        <img id="first_img" src={newyork} />
+                        <p className="desc">here is some text</p>
+                    </div>
+                    <div id="eeee">
+                        <img id="second_img" src={twopeople} />
+                        <p className="desc">here is some text</p>
+                    </div>
+                    <div id="eeee">
+                        <img id="third_img" src={display} />
+                        <p className="desc">here is some text</p>
+                    </div>
+                    <div id="eeee">
+                        <img id="fourth_img" src={hands} />
+                        <p className="desc">here is some text</p>
+                    </div>
                 </div>
                 </Fade>
             </div>

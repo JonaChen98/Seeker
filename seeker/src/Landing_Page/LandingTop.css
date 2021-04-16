@@ -26,10 +26,11 @@ img {
 }
 
 #new_york {
-  min-width: 400px;
-  min-height: 300px;
+  /* min-width: 400px;
+  min-height: 300px; */
+  object-fit: cover;
   width: 99vw;
-  height: 100vh;
+  height: 99vh;
   filter: brightness(70%);
   z-index: 0;
 }
@@ -125,12 +126,12 @@ img {
   position:relative;
   width: 100vw;
   top: 0;
-  height: 50vh;
+  height: 53vh;
   /* transition: all 2s;  */
   margin-top: -40px;
   border-radius: 10px;
   z-index: 2;
-  overflow: scroll;
+  overflow:scroll;
 }
 
 .about_us h2
@@ -155,6 +156,11 @@ img {
   /* margin-right: 60px; */
 }
 
+.about_us p
+{
+  font-size: 19px;
+}
+
 p
 {
   z-index: 2;
@@ -166,16 +172,9 @@ p
   padding-right:50px;
 }
 
-#about_second_par{
-  z-index: 2;
-  font-size: 20px;
-  font-weight: 100;
-  color: black;
-  padding-top: 30px;
-  padding-left: 60px;
-}
-
 .using{
+  padding-top: 30px;
+  margin-top: -45px;
   line-height: 2em;
   background-color: white;
   position:relative;
@@ -196,27 +195,40 @@ p
 
 #four_imgs
 {
-
   /* transition: all 3s;  */
   width: 100vw;
   justify-content: center;
   margin-top: 45px;
   text-align: center;
-  position: relative;
+  position: absolute;
   float: left;
   /* display: inline-block; */
   z-index: 10;
+  /* overflow: hidden; */
+  margin-bottom: 100px;
+}
+
+.desc{
+  margin-left: -165px;
+  margin-top: -20px;
+  font-weight: 300;
+  font-size: 17px;
+  margin-bottom: 20px;
 }
 
 #eeee {
-  margin: 5px 10px;
+  margin: -20px 10px;
   display:inline-block;
   height: 300px;
   width: 300px;
+  /* overflow: scroll; */
+  margin-bottom: 100px;
 }
 
 #first_img
 {
+  min-width: 100px;
+  min-height: 100px;
   height: 300px;
   width: 300px;
   object-fit:cover;
@@ -226,6 +238,9 @@ p
 }
 #second_img
 {
+  min-width: 100px;
+  min-height: 100px;
+  margin-top: 20px;
   height: 300px;
   width: 300px;
   object-fit: cover;
@@ -235,6 +250,9 @@ p
 }
 #third_img
 {
+  min-width: 100px;
+  min-height: 100px;
+  margin-top: 20px;
   height: 300px;
   width: 300px;
   object-fit: cover;
@@ -244,6 +262,9 @@ p
 }
 #fourth_img
 {
+  min-width: 100px;
+  min-height: 100px;
+  margin-top: 20px;
   height: 300px;
   width: 300px;
   object-fit: cover;
@@ -253,17 +274,22 @@ p
 }
 
 #footer {
+  position:relative;
+  margin-top: 100px;
+  margin-left: 6vw;
   position: relative;
-  margin-top: 270px;
-  height: 200px;
-  width: 100vw;
-  border-radius: 10px ;
-  background-color: #5e6472;
+  margin-top: 150px;
+  height: 175px;
+  width: 88vw;
+  border-radius: 15px ;
+  /* background-color: #5e6472; */
   text-align: center;
+  margin-bottom: 30px;
 }
 
 #stmt {
-  color: white;
-  padding-top: 10vh;
-  font-size: 55px;
+  color: black;
+  font-weight: 600;
+  padding-top: 9vh;
+  font-size: 45px;
 }
