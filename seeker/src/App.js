@@ -1,20 +1,23 @@
-import './App.css';
-import LandingPage from './Landing_Page/LandingPage'
-import LandingAbout from './Landing_Page/LandingAboutUs'
-import Footer from './Landing_Page/Footer'
-import Using from './Landing_Page/Using'
+import LandingPage from './Pages/LandingPage'
 
-import Zoom from 'react-reveal/Zoom';
-import Fade from 'react-reveal/Fade';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 function App() {
   return (
     <>
-      <LandingPage />
-      <LandingAbout />
-      <Using />
-      <Footer />
+    <Router>
+    <Switch>
+      <Route path="/">
+        <LandingPage />
+      </Route>
+    </Switch>
+      </Router>
     </>
   );
 }
