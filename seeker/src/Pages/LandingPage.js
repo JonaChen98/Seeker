@@ -1,13 +1,7 @@
 import React from 'react';
 import './LandingTop.css';
 import new_york from '../images/friend_group.jpeg'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
-import Login from './Login'
+import { Link } from "react-router-dom";
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
@@ -23,8 +17,8 @@ export default function LandingPage()
             <div>
                 <p className ="landing_seeker" id="seeker_landing">Seeker</p>
                 <div id="buttons">
-                    <button id ="login_button">Login</button>
-                    <button id ="sign_up">Sign Up</button>
+                    <Link to='/loginsignup'><button id ="login_button">Login</button></Link>
+                    <Link to='/loginsignup'><button id ="sign_up">Sign Up</button></Link>
                 </div>
                 <div id="quote_subquote">
                     <h1 id="landing_quote">Everything's better with friends</h1>

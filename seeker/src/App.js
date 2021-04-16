@@ -6,17 +6,17 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Login from './Pages/LoginSignup/Login';
 
 
 function App() {
   return (
     <>
-    <Router>
-    <Switch>
-      <Route path="/">
-        <LandingPage />
-      </Route>
-    </Switch>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+          <Route path="/loginsignup" component={Login}/>
+        </Switch>
       </Router>
     </>
   );
