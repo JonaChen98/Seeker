@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "kill-port": "^1.6.1",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-reveal": "^1.2.2",
     "react-spring": "^9.1.1"
   }
 }
