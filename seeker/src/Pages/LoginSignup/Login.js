@@ -36,7 +36,7 @@ class LoginForm extends React.Component
 
     handleChange(e)
     {
-        const {name, password} = e.target
+        const {name, value} = e.target
         this.setState({ [name]: value })
     }
 
