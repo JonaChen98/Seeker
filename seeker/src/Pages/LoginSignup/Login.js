@@ -10,13 +10,7 @@ class Login extends React.Component{
     render(){
         return(
             <>
-                <div className="login">
-                    <p id="seeker_landing">Seeker</p>
-                    <div id="forms">
-                        <div id="login_form" className="form"></div>
-                        <div id="signup_form" className="form"></div>
-                    </div>
-                </div>
+                <SignUpForm />
             </>
         )
     }
@@ -58,12 +52,97 @@ class LoginForm extends React.Component
 class SignUpForm extends React.Component {
     constructor(){
         super();
-        this.state={}
+        this.state={
+            firstName: "",
+            lastName: "",
+            gender: "",
+            password: ""
+        }
+        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleChange = this.handleChange.bind(this)
+    }
+
+    handleChange(event) {
+        const {name, value, type, checked} = event.target
+        type === "checkbox" ? 
+            this.setState({
+                [name]: checked
+            })
+        :
+        this.setState({
+            [name]: value
+        }) 
+    }
+
+    handleSubmit(e){
+        alert('Successfully signed up', 2000);
     }
 
     render() {
         return (
-            <div></div>
+            <form onSubmit={this.handleSubmit}>
+                <label>
+                    first fame
+                </label>
+                <br />
+                <input type="text" value={this.state.firstName} name="firstName" onChange={this.handleChange} required />
+                
+                <br /><br />
+
+                <label>
+                    last name
+                </label>
+                <br />
+                <input type="text" value={this.state.lastName} name="lastName" onChange={this.handleChange} placeholder="optional" />
+
+                <br /><br />
+
+                <label>
+                    <input 
+                        type="radio" 
+                        name="gender"
+                        value="male"
+                        checked={this.state.gender === "male"}
+                        onChange={this.handleChange}
+                        required
+                    /> male
+                </label>
+                <br />
+                <label>
+                    <input 
+                        type="radio" 
+                        name="gender"
+                        value="female"
+                        checked={this.state.gender === "female"}
+                        onChange={this.handleChange}
+                        required
+                    /> female
+                </label>
+                <br />
+                <label>
+                    <input 
+                        type="radio" 
+                        name="gender"
+                        value="female"
+                        checked={this.state.gender === "Non-Binary"}
+                        onChange={this.handleChange}
+                        required
+                    /> non-binary
+                </label>
+
+                <br /><br />
+
+                <label>
+                    set password
+                </label>
+                <br />
+                <input type="text" value={this.state.password} name="password" onChange={this.handleChange} />
+
+                <br /><br />
+
+                <button>Start Seeking</button>
+
+            </form>
         )
     }
 }

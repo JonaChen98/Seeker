@@ -15,7 +15,7 @@ export default function LandingPage()
     return(
         <>
             <div>
-                <p className ="landing_seeker" id="seeker_landing">Seeker</p>
+                <p className ="landing_seeker">Seeker</p>
                 <div id="buttons">
                     <Link to='/loginsignup'><button id ="login_button">Login</button></Link>
                     <Link to='/loginsignup'><button id ="sign_up">Sign Up</button></Link>
