@@ -1,14 +1,18 @@
 import React from 'react';
-import './LandingTop.css';
-import new_york from '../images/friend_group.jpeg'
+import './Landing.css';
 import { Link } from "react-router-dom";
-import Zoom from 'react-reveal/Zoom';
+
+// import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
-import newyork from '../images/newyork.jpeg'
-import twopeople from '../images/twopeople.jpeg'
-import hands from '../images/hands.jpeg'
-import display from '../images/display.jpeg'
+
+
+import friends from '../../images/friend_group.jpeg'
+import newyork from '../../images/newyork.jpeg'
+import twopeople from '../../images/twopeople.jpeg'
+import hands from '../../images/hands.jpeg'
+import display from '../../images/display.jpeg'
+import LoginSignup from '../LoginSignup/index'
 
 export default function LandingPage()
 {
@@ -17,14 +21,14 @@ export default function LandingPage()
             <div>
                 <p className ="landing_seeker">Seeker</p>
                 <div id="buttons">
-                    <Link to='/loginsignup'><button id ="login_button">Login</button></Link>
-                    <Link to='/loginsignup'><button id ="sign_up">Sign Up</button></Link>
+                    <Link to='/login'><button id ="login_button">Login</button></Link>
+                    <Link to='/signup'><button id ="sign_up">Sign Up</button></Link>
                 </div>
                 <div id="quote_subquote">
                     <h1 id="landing_quote">Everything's better with friends</h1>
                     <h3 id="dare">Seeker was created to improve (dare we say, maybe even resurrect) your social life.</h3>
                 </div>
-                <img id="new_york" src={new_york}/>
+                <img id="new_york" src={friends}/>
             </div>
             <div className="about_us">
                 <Fade>
