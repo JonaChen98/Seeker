@@ -3,6 +3,10 @@
     "kill-port": "^1.6.1",
     "lodash": "^4.17.21",
     "react-animate-on-scroll": "^2.1.5",
+    "react-grid-gallery": "^0.5.5",
+    "react-imgix": "^9.0.3",
+    "react-justified-grid": "^1.0.0",
+    "react-responsive-image-grid": "^1.1.0",
     "react-responsive-masonry": "^2.1.2",
     "react-reveal": "^1.2.2",
     "react-spring": "^9.1.1"

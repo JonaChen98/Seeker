@@ -106,8 +106,8 @@ img {
   width: 80px;
   height: 34px;
   font-size: 12px;
-  /* background: #FFA69E;
-  border: solid 1px #FFA69E; */
+  /* background: #DAA49A;
+  border: solid 1px #DAA49A; */
   background: #5e6472;
   border: solid 1px #5e6472;
   border-radius: 13px;
@@ -284,7 +284,9 @@ p
 }
 
 #stmt {
+  /* color: #DAA49A;  */
   color: #ffa69e;
+   /* ffa69e */
   font-weight: 600;
   padding-top: 9vh;
   font-size: 45px;
