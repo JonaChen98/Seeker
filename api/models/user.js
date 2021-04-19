@@ -35,10 +35,9 @@ module.exports = (sequelize, DataTypes) => {
     about: {
         type: DataTypes.STRING,
         validate: {
-          len: [3, 250],
+          len: [3, 1000],
           notEmpty: true,
         },
-        unique: true,
     },
 
   }, {
@@ -48,6 +47,7 @@ module.exports = (sequelize, DataTypes) => {
 
   User.associate = (models) => {
     // associations can be defined here
+    models.User.belongsToMany(models.Event, {through: 'Attendance'});
   };
 
   return User;
