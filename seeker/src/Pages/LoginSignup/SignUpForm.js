@@ -32,15 +32,15 @@ class SignUpForm extends React.Component {
                         first name
                     </label>
                     <br />
-                    <input type="text" value={this.state.firstName} name="firstName" onChange={this.handleChange} required />
+                    <input class="signup_text_field" type="text" value={this.state.firstName} name="firstName" onChange={this.handleChange} required />
                     
-                    <br /><br />
+                    <br />
 
                     <label>
                         last name
                     </label>
                     <br />
-                    <input type="text" value={this.state.lastName} name="lastName" onChange={this.handleChange} placeholder="optional" />
+                    <input class="signup_text_field" type="text" value={this.state.lastName} name="lastName" onChange={this.handleChange} placeholder="optional" />
 
                     <br /><br />
 
@@ -83,10 +83,10 @@ class SignUpForm extends React.Component {
                         set password
                     </label>
                     <br />
-                    <input type="text" value={this.state.password} name="password" onChange={this.handleChange} />
+                    <input class="signup_text_field"  type="text" value={this.state.password} name="password" onChange={this.handleChange} />
 
                     <br /><br />
-                    <input type="submit" value="Start Seeking" />
+                    
 
                 </form>
             </div>

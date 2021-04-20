@@ -25,6 +25,10 @@ import surfing from '../../images/surfing.jpeg'
 import nychudson from '../../images/nyc-hudson.jpeg'
 import timessquare from '../../images/timessquare.jpeg'
 
+// import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
+import Bounce from 'react-reveal/Bounce';
+
 
 import './ImageGrid.css'
 
@@ -50,7 +54,8 @@ export default function ImageGrid()
                     <img className="img" src={timessquare} />
                 </div>
 
-                </div>
+            </div>
+
             <div className="grid_img_container">
 
                 <div className="imgdiv">
@@ -74,6 +79,7 @@ export default function ImageGrid()
                 </div>
 
             </div>
+            
             <div className="grid_img_container">
 
                 <div className="imgdiv">

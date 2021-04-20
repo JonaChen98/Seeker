@@ -1,4 +1,5 @@
 import React from 'react'
+import './login_signup.css'
 
 class LoginForm extends React.Component
 {
@@ -28,17 +29,19 @@ class LoginForm extends React.Component
             <>
                 <div className="login-container" className="login-signup-form">
                     <form onSubmit={this.handleSubmit}>
-                        <label className="login-item">Username</label>
+                        <label className="login-item">username</label>
                         <br />
-                        <input className="login-item" type="text" name="username" />
+                        <input class="login_text_field login-item" type="text" name="username" />
                         <br />
                         <br />
 
-                        <label className="login-item">Password</label>
+                        <label className="login-item">password</label>
                         <br />
-                        <input className="login-item" type="password" name="password" />
+                        <input class="login_text_field login-item" type="password" name="password" />
 
-                        <input type="submit" value="Login" />
+                        <br />
+                        <br />
+
                     </form>
                 </div>
             </>
