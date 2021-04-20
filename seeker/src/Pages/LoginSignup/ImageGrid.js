@@ -43,7 +43,7 @@ export default function ImageGrid()
                 </div>
 
                 <div className="imgdiv">
-                    <img className="img" src={wine} />
+                    <img className="img" src={beer} />
                 </div>
 
                 <div className="imgdiv">
@@ -83,7 +83,7 @@ export default function ImageGrid()
             <div className="grid_img_container">
 
                 <div className="imgdiv">
-                    <img className="img" src={ferriswheel} />
+                    <img className="img" src={yoga} />
                 </div>
 
                 <div className="imgdiv">
@@ -91,11 +91,15 @@ export default function ImageGrid()
                 </div>
 
                 <div className="imgdiv">
+                    <img className="img" src={ferriswheel} />
+                </div>
+
+                <div className="imgdiv">
                     <img className="img" src={red_concert} />
                 </div>
 
                 <div className="imgdiv">
-                    <img className="img" src={surfing} />
+                    <img className="img" src={wine} />
                 </div>
             </div>
             <div className="grid_img_container">

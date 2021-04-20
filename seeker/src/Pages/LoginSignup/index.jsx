@@ -58,7 +58,7 @@ class LoginSignup extends React.Component
                                     <br />
                                     <div> 
                                         <SignUpForm /> 
-                                        <button id="start_seeking" type="submit" value="start seeking">start seeking</button>
+                                        
                                     </div>
                             </div>
                         </div>
@@ -84,7 +84,7 @@ class LoginSignup extends React.Component
                                     <br />
                                     <div> 
                                         <LoginForm /> 
-                                        <button id="loginbutton" type="submit" value="login">login</button>
+                                        
                                     </div>
                                     
                                 

@@ -7,7 +7,8 @@ class SignUpForm extends React.Component {
             firstName: "",
             lastName: "",
             gender: "",
-            password: ""
+            password: "",
+            email:""
         }
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
@@ -29,6 +30,14 @@ class SignUpForm extends React.Component {
             <div className="login-signup-form">
                 <form onSubmit={this.handleSubmit}>
                     <label>
+                        email
+                    </label>
+                    <br />
+                    <input class="signup_text_field" type="text" value={this.state.email} name="email" onChange={this.handleChange} required />
+
+                    <br />
+
+                    <label>
                         first name
                     </label>
                     <br />
@@ -36,57 +45,35 @@ class SignUpForm extends React.Component {
                     
                     <br />
 
+
                     <label>
                         last name
                     </label>
                     <br />
                     <input class="signup_text_field" type="text" value={this.state.lastName} name="lastName" onChange={this.handleChange} placeholder="optional" />
 
-                    <br /><br />
+                    <br />
 
-                    <label>
-                        <input 
-                            type="radio" 
-                            name="gender"
-                            value="male"
-                            checked={this.state.gender === "male"}
-                            onChange={this.handleChange}
-                            required
-                        /> male
-                    </label>
-                    <br />
-                    <label>
-                        <input 
-                            type="radio" 
-                            name="gender"
-                            value="female"
-                            checked={this.state.gender === "female"}
-                            onChange={this.handleChange}
-                            required
-                        /> female
-                    </label>
-                    <br />
-                    <label>
-                        <input 
-                            type="radio" 
-                            name="gender"
-                            value="female"
-                            checked={this.state.gender === "Non-Binary"}
-                            onChange={this.handleChange}
-                            required
-                        /> non-binary
+                    <label> gender 
+                        <br/ >
+                        <select id="gender_selection_signup" name="gender" value={this.state.gender} onChange={this.handleChange}>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                            <option value="non-binary">non-binary</option>
+                            <option value="other">other</option>
+                        </select>
                     </label>
 
-                    <br /><br />
+                    <br/>
 
                     <label>
                         set password
                     </label>
                     <br />
-                    <input class="signup_text_field"  type="text" value={this.state.password} name="password" onChange={this.handleChange} />
+                    <input class="signup_text_field"  type="password" value={this.state.password} name="password" onChange={this.handleChange} />
 
                     <br /><br />
-                    
+                    <button id="start_seeking" type="submit" value="start seeking">start seeking</button>
 
                 </form>
             </div>
