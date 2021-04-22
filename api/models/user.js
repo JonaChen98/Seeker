@@ -6,10 +6,26 @@ module.exports = (sequelize, DataTypes) => {
   class User extends Model {}
 
   User.init({
-    name: {
+    first_name: {
       type: DataTypes.STRING,
       validate: {
-        len: [3, 250],
+        len: [1, 250],
+        notEmpty: true,
+      }
+    },
+
+    last_name: {
+      type: DataTypes.STRING,
+      validate: {
+        len: [1, 250],
+        notEmpty: true,
+      }
+    },
+
+    gender: {
+      type: DataTypes.STRING,
+      validate: {
+        len: [1, 50],
         notEmpty: true,
       }
     },
@@ -36,7 +52,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         validate: {
           len: [3, 1000],
-          notEmpty: true,
         },
     },
 

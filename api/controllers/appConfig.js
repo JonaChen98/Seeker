@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   res.json({
-    title: 'APP TITLE',
+    title: 'Seeker',
     description: 'A short description about this app',
   });
 });
