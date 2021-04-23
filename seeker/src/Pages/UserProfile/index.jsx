@@ -16,13 +16,15 @@ class UserProfile extends React.Component {
     render() {
         return (
             <>
-                <Navbar />
-                <div style={{display:"flex", flexDirection:"row"}}>
-                    <UserInfo style={{position:"fixed"}} />
-                    <div id="user_profile_things" style={{overflow:"scroll",display:"flex", flexDirection:"column"}}>
-                        <MatchRequests />
-                        <UserEvents />
-                        <UserMatches />
+                <div style={{position:"relative"}}>
+                    <Navbar />
+                    <div style={{display:"flex", flexDirection:"row", position:"relative"}}>
+                        <div id="user_profile_things" style={{ display:"flex", flexDirection:"column", position:"relative"}}>
+                            <MatchRequests />
+                            <UserEvents />
+                            <UserMatches />
+                        </div>
+                        <UserInfo  />
                     </div>
                 </div>
             </>

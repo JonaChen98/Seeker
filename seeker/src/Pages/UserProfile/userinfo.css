@@ -1,21 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;300;600&display=swap');
 
 #user_info_container {
-    margin-top: 20px;
-    margin-left: 2vw;
-    position: absolute;
+    margin-top: -80px;
+    /* margin-left: 2vw; */
+    margin-left: 75vw;
+    /* position: absolute; */
     display: flex;
     flex-flow: column;
-    height: 52vh;
-    width: 20vw;
-    justify-content: center;
+    position: absolute;
+    height: 100vh;
+    width: 25vw;
+    /* justify-content: center; */
     background-color: #FAF3DD;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     /* box-shadow: 0.2px 0.2px 2px 0.2px gray; */
     /* line-height: 1vh; */
 }
 
+#profile_settings_button {
+    width: 70px;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 270px;
+    margin-top: 15px;
+}
+
 .user_info_item {
+    /* background-color: red; */
+    margin-top: 20px;
     align-items: center;
     text-align: center;
     line-height: 0.2px;
@@ -31,6 +47,19 @@
 
 #user_name {
     font-size: 25px;
+}
+
+#user_about_heading {
+    font-size: 23px;
+    font-weight: 300;
+    margin-left: 35px;
+    color: black;
+}
+
+#user_info {
+    text-align: left;
+    margin-top: 65px;
+    /* line-height: 0px; */
 }
 
 #user_gender {
@@ -50,13 +79,16 @@
     font-weight: 300;
 }
 
-#profile_settings_button {
+#profile_logout_button {
     font-size: 12px;
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
     background-color: transparent;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-left: -170px;
-    margin-top: 15px;
+    border: 1px solid #ffa69e;
+    border-radius: 10px;
+    background-color: #ffa69e;
+    /* margin-left: -170px; */
+    margin-top: 35px;
+    width: 150px;
+    height: 40px;
 }

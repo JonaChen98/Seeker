@@ -23,12 +23,14 @@
 
 #match_request_container {
     margin-top: 20px;
-    margin-left: 30vw;
+    /* margin-left: 30vw; */
+    margin-left: 5vw;
     /* position: relative; */
     /* display: flex; */
     /* flex-flow: column; */
     height: 25vh;
     width: 65vw;
+    position: relative;
     justify-content: center;
     border: 1px solid #555B6E;
     background-color: #555B6E;
