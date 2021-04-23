@@ -3,12 +3,10 @@ import LandingPage from './Pages/Landing/LandingPage'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
-import LoginForm from './Pages/LoginSignup/LoginForm';
-import SignUpForm from './Pages/LoginSignup/SignUpForm'
 import LoginSignup from './Pages/LoginSignup/index'
+import UserProfile from './Pages/UserProfile/index'
 
 function App() {
   return (
@@ -17,6 +15,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/a" component={LoginSignup} />
+          <Route exact path="/p" component={UserProfile} />
         </Switch>
       </Router>
     </>

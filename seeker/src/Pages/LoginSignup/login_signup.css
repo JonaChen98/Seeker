@@ -59,6 +59,7 @@
   border-radius: 3px;
   height: 30px;
   width: 9vw;
+  font-size: 15px;
 }
 
 .login_text_field, .signup_text_field{
@@ -81,6 +82,7 @@
   border-radius: 3px;
   height: 30px;
   width: 4vw;
+  /* font-size: 2vh; */
 }
 
 #start_seeking {
@@ -91,4 +93,5 @@
   border-radius: 3px;
   height: 30px;
   width: 8vw;
+  font-size: 15px;
 }

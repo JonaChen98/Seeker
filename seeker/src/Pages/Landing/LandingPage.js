@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 
-
 import friends from '../../images/friend_group.jpeg'
 import newyork from '../../images/newyork.jpeg'
 import twopeople from '../../images/twopeople.jpeg'

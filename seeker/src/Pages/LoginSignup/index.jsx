@@ -3,6 +3,7 @@ import './login_signup.css'
 import SignUpForm from './SignUpForm'
 import LoginForm from './LoginForm'
 import ImageGrid from './ImageGrid'
+import Fade from 'react-reveal/Fade';
 
 class LoginSignup extends React.Component
 {
@@ -20,8 +21,13 @@ class LoginSignup extends React.Component
       };
 
     componentDidMount() {
-        const fromLogin  = this.props.location.state.fromLogin
-        this.setState({showLogin: fromLogin})
+        if((this.props.location.state.fromLogin === true) || (this.props.location.state.fromLogin === false)) {
+            const fromLogin  = this.props.location.state.fromLogin
+            this.setState({showLogin: fromLogin})
+        }
+        else {
+            this.setState({showLogin: true})
+        }
     }
 
     changeForm(e){
@@ -58,7 +64,6 @@ class LoginSignup extends React.Component
                                     <br />
                                     <div> 
                                         <SignUpForm /> 
-                                        
                                     </div>
                             </div>
                         </div>
