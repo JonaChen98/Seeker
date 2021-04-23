@@ -1,60 +1,51 @@
 'use strict';
 const { Model } = require('sequelize');
+const bcrypt = require('bcryptjs');
 
 
 module.exports = (sequelize, DataTypes) => {
-  class User extends Model {}
+  class User extends Model {
+    getFullname() {
+      return [this.firstName, this.lastName].join(' ');
+    }
+  }
 
   User.init({
-    first_name: {
-      type: DataTypes.STRING,
-      validate: {
-        len: [1, 250],
-        notEmpty: true,
-      }
-    },
-
-    last_name: {
-      type: DataTypes.STRING,
-      validate: {
-        len: [1, 250],
-        notEmpty: true,
-      }
-    },
-
-    gender: {
-      type: DataTypes.STRING,
-      validate: {
-        len: [1, 50],
-        notEmpty: true,
-      }
-    },
-
-    // email must be unique
+    firstName: { type: DataTypes.STRING },
+    lastName: { type: DataTypes.STRING },
     email: {
+      type: DataTypes.STRING,
+      unique: true,
+      allowNull: false,
+      validate: {
+        isEmail: true,
+      },
+      gender: {
         type: DataTypes.STRING,
         validate: {
-          len: [3, 250],
+          len: [1, 50],
           notEmpty: true,
-        },
-        unique: true,
-    },
-
-    password: {
-        type: DataTypes.STRING,
-        validate: {
-          len: [3, 250],
-          notEmpty: true,
-        },
-    },
-
-    about: {
+        }
+      },
+      about: {
         type: DataTypes.STRING,
         validate: {
           len: [3, 1000],
         },
     },
 
+    },
+    passwordHash: { type: DataTypes.STRING },
+    password: { 
+      type: DataTypes.VIRTUAL, // virtual doesnt store this in the db only exist locally
+      validate: {
+        isLongEnough: (val) => {
+          if (val.length < 7) {
+            throw new Error("Please choose a longer password");
+          }
+        },
+      },
+    },
   }, {
     sequelize,
     modelName: 'user'
@@ -62,8 +53,14 @@ module.exports = (sequelize, DataTypes) => {
 
   User.associate = (models) => {
     // associations can be defined here
-    models.User.belongsToMany(models.Event, {through: 'Attendance'});
+    models.User.belongsToMany(models.Event, {through: 'Attendance'})
   };
+
+  User.beforeSave((user, options) => { //hashes the provided password and storing it in the db
+    if(user.password) {
+      user.passwordHash = bcrypt.hashSync(user.password, 10);
+    }
+  });
 
   return User;
 };
