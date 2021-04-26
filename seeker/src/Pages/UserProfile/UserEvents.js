@@ -29,7 +29,7 @@ class UserEvents extends React.Component {
     render() {
         return (
             <>
-            {/* <Fade> */}
+            <Fade bottom>
                 <div id="user_events_container">
                     <h3 id="events_section_title">Your Events</h3>
                     <Fade>
@@ -106,7 +106,7 @@ class UserEvents extends React.Component {
                     </Card.Group>
                     </Fade>
                 </div>
-                {/* </Fade> */}
+                </Fade>
             </>
         )
     }

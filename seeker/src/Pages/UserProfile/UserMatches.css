@@ -17,7 +17,7 @@
     background-color: #AAA;
     width: 0em;
     height: 0em;
-    outline: 0px solid #ffa69e;
+    outline: 0px solid #bee3db;
     border-radius: 12px;
 }
 
@@ -29,8 +29,8 @@
     height: 40vh;
     width: 65vw;
     /* justify-content: center; */
-    border: 1px solid #ffa69e;
-    background-color: #ffa69e;
+    border: 1px solid #bee3db;
+    background-color: #bee3db;
     border-radius: 12px;
 }
 

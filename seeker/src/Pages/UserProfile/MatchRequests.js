@@ -39,6 +39,7 @@ class MatchRequests extends React.Component {
     render() {
         return (
             <>
+            <Fade bottom>
                 <div id="match_request_container">
                 <Fade>
                     <h3 id="match_req_title">Match Requests</h3>
@@ -128,6 +129,7 @@ class MatchRequests extends React.Component {
                     </Card.Group>
                 </Fade>
             </div>
+            </Fade>
             </>
         )
     }

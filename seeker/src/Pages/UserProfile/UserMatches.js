@@ -24,7 +24,8 @@ class UserMatches extends React.Component {
 
     render(){
         return(
-            <>
+            <> 
+            <Fade bottom>
                 <div id="user_matches_container">
                     <h3 id="user_matches_title">Your Matches</h3>
                     <Fade>
@@ -103,6 +104,7 @@ class UserMatches extends React.Component {
                         
                     </Fade>
                 </div>
+                </Fade>
             </>
         )
     }
