@@ -7,24 +7,37 @@ body{
 #user_profile_things::-webkit-scrollbar {
     width: 0em;
     background-color: transparent;
-    height:0.4em;
+    height:0em;
 }
 
 #user_profile_things::-webkit-scrollbar-track {
     box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
     border-radius: 12px;
-    width: 0em;
-    height: 0em;
 }
 
 #user_profile_things::-webkit-scrollbar-thumb {
     background-color: #AAA;
-    width: 0em;
-    height: 0em;
     outline: 0px solid #555B6E;
     border-radius: 12px;
 }
 
 #user_profile_things {
     overflow: scroll;
+}
+
+.match_request_items::-webkit-scrollbar {
+    width: 0em;
+    background-color: transparent;
+    height:0em;
+}
+
+.match_request_items::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+    border-radius: 12px;
+}
+
+.match_request_items::-webkit-scrollbar-thumb {
+    background-color: #AAA;
+    outline: 0px solid #555B6E;
+    border-radius: 12px;
 }
