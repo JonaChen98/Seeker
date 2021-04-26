@@ -16,10 +16,10 @@ class UserProfile extends React.Component {
     render() {
         return (
             <>
-                <div style={{position:"relative"}}>
+                <div style={{position:"relative", height:"100vh"}}>
                     <Navbar />
-                    <div style={{display:"flex", flexDirection:"row", position:"relative"}}>
-                        <div id="user_profile_things" style={{ display:"flex", flexDirection:"column", position:"relative"}}>
+                    <div style={{display:"flex", flexDirection:"row"}}>
+                        <div id="user_profile_things" style={{ display:"flex", flexDirection:"column", position:"relative", height:"90vh", overflow:"scroll"}}>
                             <MatchRequests />
                             <UserEvents />
                             <UserMatches />

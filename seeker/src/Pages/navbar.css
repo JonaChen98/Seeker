@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap');
 
 #nav_container {
-
     position: relative;
     /* background-color: red; */
     display: flex;
@@ -22,9 +21,11 @@
     margin-top: 10px;
     margin-left: 25px;
     z-index: 10;
-    color: #aed9e0;
+    /* color: #aed9e0; */
+    color:black;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 300;
+    /* font-weight: 600; */
 }
 
 #to_profile_button {

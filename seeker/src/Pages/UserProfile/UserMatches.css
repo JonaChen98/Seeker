@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;300;600&display=swap');
+
 .user_matches_items::-webkit-scrollbar {
-    width: 0.4em;
+    width: 0em;
     background-color: transparent;
     height:0em;
 }
@@ -20,6 +22,7 @@
 }
 
 #user_matches_container{
+    padding-top: 20px;
     margin-top: 20px;
     margin-left: 5vw;
     position: relative;
@@ -42,7 +45,7 @@
     margin-left: 2vw;
     overflow: scroll;
     /* background-color: red; */
-    height: 220px;
+    height: 250px;
     width: 62vw;
     display: flex;
     flex-flow: row;

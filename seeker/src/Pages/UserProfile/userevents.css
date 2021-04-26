@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;300;600&display=swap');
 
 .events_container_items::-webkit-scrollbar {
-    width: 0.4em;
+    width: 0em;
     background-color: transparent;
-    height:0.4em;
+    height:0em;
 }
 
 .events_container_items::-webkit-scrollbar-track {
@@ -22,6 +22,7 @@
 }
 
 #user_events_container {
+    padding-top: 20px;
     /* box-shadow: 0.2em 0 .2em gray;; */
     margin-top: 20px;
     margin-left: 5vw;
@@ -45,73 +46,13 @@
     margin-left: 2vw;
     overflow: scroll;
     /* background-color: red; */
-    height: 220px;
+    height: 250px;
     width: 62vw;
     display: flex;
     flex-flow: row;
     flex-wrap:wrap;
-    /* align-items:; */
     text-align:left;
-    /* line-height:2px; */
     
-}
-
-.event_item{
-    /* background-color: purple; */
-    display: flex;
-    flex-flow: column;
-    height: 150px;
-    width: 430px;
-    margin-bottom: 15px;
-}
-
-#img_title{
-    padding: 10px;
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    /* line-height: 3px; */
-}
-
-#event_img {
-    height: 100px;
-    width: 100px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-#event_name {
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color:black;
-    margin-left: 10px;
-    margin-top: -1px;
-}
-
-#event_address {
-    position: relative;
-    margin-left: -160px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 13px;
-    margin-top: -3px;
-    font-weight: 300;
-    color:black;
-    font-size: 15px;
-}
-
-#event_date {
-    position: relative;
-    /* width: 190px; */
-    margin-left: 75px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 13px;
-    margin-top: 20px;
-    margin-top: -80px;
-    font-weight: 300;
-    color:black;
-    font-size: 15px;
 }
 
 #cancel_event_attendance {
@@ -125,4 +66,14 @@
     transition: 1s;
     background-color: #ffa69e;
     /* border: 0.8px solid #ffa69e; */
+}
+
+#cancel_button{
+    text-align: center;
+}
+
+#cancel_button:hover{
+    height: 25px;
+    width: 60px;
+    background-color: red;
 }
