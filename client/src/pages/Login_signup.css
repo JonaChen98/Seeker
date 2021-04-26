@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
+
+.login {
+  margin: 0;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Spartan', sans-serif; */
+  font-family: 'Raleway', sans-serif;
+}
+
+#seeker_landing
+{
+  color:black;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 25px;
+  z-index: 10;
+  font-size: 28px;
+  font-weight: 200;
+}
+
+#formtitle {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+#form {
+  text-align: right;
+  padding-top: 25vh;
+  position: absolute;
+  padding-left: 100px;
+  width: 18vw;
+  /* background-color: red; */
+  display: flex;
+  flex-flow: column;
+}
+
+#gender_selection_signup {
+  width: 80px;
+  height: 29px; 
+  border: 1px solid #999999; 
+  padding: 5px;
+  border-radius: 5px;
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+#forms_container {
+  line-height: 3vh;
+  display: flex;
+  flex-flow: column;
+}
+
+.login_signup_button{
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid #5e6472;
+  border-radius: 3px;
+  height: 30px;
+  width: 9vw;
+  font-size: 15px;
+}
+
+.login_text_field, .signup_text_field{
+  /* margin-right: 90px; */
+  width: 250px; 
+  height: 20px; 
+  border: 1px solid #999999; 
+  padding: 5px;
+  border-radius: 5px;
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+#loginbutton {
+  background-color: #5e6472;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid #5e6472;
+  border-radius: 3px;
+  height: 30px;
+  width: 4vw;
+  /* font-size: 2vh; */
+}
+
+#start_seeking {
+  background-color: #5e6472;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid #5e6472;
+  border-radius: 3px;
+  height: 30px;
+  width: 8vw;
+  font-size: 15px;
+}
