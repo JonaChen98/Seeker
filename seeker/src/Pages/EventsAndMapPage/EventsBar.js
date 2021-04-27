@@ -23,7 +23,7 @@ class EventsBar extends React.Component {
     //         .then(events => {
     //             this.setState({
     //             loading: false,
-    //             events: events.map((p,ii) => <Event {...p} key={ii} />),
+    //             events: events.map((p,ii) => <BarEventItem {...p} key={ii} />),
     //             });
     //         })
     //         .catch(err => console.log("API ERROR: ", err));
