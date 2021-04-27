@@ -1,8 +1,13 @@
 {
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material/card": "^11.0.0",
+    "bootstrap": "^4.6.0",
     "kill-port": "^1.6.1",
     "lodash": "^4.17.21",
     "react-animate-on-scroll": "^2.1.5",
+    "react-bootstrap": "^1.5.2",
+    "react-datepicker": "^3.8.0",
     "react-grid-gallery": "^0.5.5",
     "react-imgix": "^9.0.3",
     "react-justified-grid": "^1.0.0",

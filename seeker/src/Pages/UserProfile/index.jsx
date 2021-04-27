@@ -3,9 +3,8 @@ import UserInfo from './UserInfo'
 import UserEvents from './UserEvents'
 import MatchRequests from './MatchRequests'
 import UserMatches from './UserMatches'
-import Navbar from '../Navbar'
+import Navbar from './Navbar'
 import './index.css'
-
 
 class UserProfile extends React.Component {
     constructor() {
@@ -18,7 +17,10 @@ class UserProfile extends React.Component {
             <>
                 <div style={{position:"relative", height:"100vh"}}>
                     <Navbar />
-                    <div id="profile_items" style={{display:"flex", flexDirection:"row"}}>
+                    <div id="first_slant"/>
+                    <div id="second_slant"/>
+                    <div id="third_slant"/>
+                    <div id="profile_items" style={{display:"flex", zIndex:"10", flexDirection:"row"}}>
                         <div id="user_profile_things" style={{ display:"flex", flexDirection:"column", position:"relative", height:"90vh", overflow:"scroll"}}>
                             <MatchRequests />
                             <UserEvents />

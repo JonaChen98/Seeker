@@ -25,18 +25,12 @@ import surfing from '../../images/surfing.jpeg'
 import nychudson from '../../images/nyc-hudson.jpeg'
 import timessquare from '../../images/timessquare.jpeg'
 
-// import Zoom from 'react-reveal/Zoom';
-import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
-
-
 import './ImageGrid.css'
 
 export default function ImageGrid()
 {
     return (
         <>
-        {/* <div className="img_grid"> */}
             <div className="grid_img_container">
                 <div className="imgdiv">
                     <img className="img" src={nycabove} />
@@ -120,7 +114,6 @@ export default function ImageGrid()
                     <img className="img" src={broadway} />
                 </div>
             </div>
-        {/* </div> */}
         </>
     )
 }

@@ -28,9 +28,10 @@
     position: relative;
     height: 40vh;
     width: 65vw;
-    /* justify-content: center; */
-    border: 1px solid #bee3db;
-    background-color: #bee3db;
+    background-color: white;
+    border: 1px solid black;
+    /* border: 1px solid #bee3db;
+    background-color: #bee3db; */
     border-radius: 12px;
 }
 

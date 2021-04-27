@@ -79,8 +79,8 @@ class MatchRequests extends React.Component {
                                             flexFlow:"column"
                                         }}
                                     >
-                                    <Card.Header style={{textAlign:"left", marginLeft:"5px", color:"white", fontSize:"15px", fontWeight:"600",fontFamily:"'Raleway', sans-serif"}}>Steve Sanders</Card.Header>
-                                    <Card.Description style={{fontFamily:"'Raleway', sans-serif",textAlign:"left", marginLeft:"5px", color:"white"}}>
+                                    <Card.Header style={{textAlign:"left", marginLeft:"5px", color:"black", fontSize:"15px", fontWeight:"600",fontFamily:"'Raleway', sans-serif"}}>Steve Sanders</Card.Header>
+                                    <Card.Description style={{fontFamily:"'Raleway', sans-serif",textAlign:"left", marginLeft:"5px", color:"black"}}>
                                     wants to connect with you. Both of you are attending <strong>Event Name </strong>
                                     </Card.Description>
                                     </div>

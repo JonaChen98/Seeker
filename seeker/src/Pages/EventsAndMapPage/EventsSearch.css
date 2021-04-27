@@ -1,0 +1,25 @@
+#events_bar_search{
+    background-color: white;
+    width: 78vw;
+    display: flex;
+    flex-flow: row;
+    height: 50px;
+    margin-top: 85px;
+    position: fixed;
+    margin-left: 22vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.event_search_input{
+    height: 30px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+#events_search_title{
+    font-size: 15px;
+}

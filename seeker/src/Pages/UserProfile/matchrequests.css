@@ -27,13 +27,16 @@
     width: 65vw;
     position: relative;
     justify-content: center;
-    border: 1px solid #555B6E;
-    background-color: #555B6E;
+    background-color: white;
+    border: 1px solid black;
+    /* border: 1px solid #555B6E;
+    background-color: #555B6E; */
     border-radius: 12px;
 }
 
 #match_req_title {
-    color:white;
+    /* color:white; */
+    color:black;
     font-size: 22px;
     margin-left: 30px;
 }
@@ -69,7 +72,7 @@
 
 #no_button:hover{
     /* transition: 1s; */
-    background-color: rgb(172, 119, 119);
+    background-color: rgb(216, 110, 110);
     width: 30px;
     height:max-content;
     border-radius: 7px;

@@ -29,7 +29,7 @@ class LandingPage extends React.Component
                     <p className ="landing_seeker">Seeker</p>
                     <div id="buttons">
                         <Link to={{
-                            pathname:'/a',
+                            pathname:'/loginsignup',
                             state:{
                                 fromLogin: true
                             }
@@ -37,7 +37,7 @@ class LandingPage extends React.Component
                             <button id ="login_button">Login</button>
                         </Link>
                         <Link to={{
-                            pathname:'/a',
+                            pathname:'/loginsignup',
                             state:{
                                 fromLogin: false
                             }
@@ -51,7 +51,7 @@ class LandingPage extends React.Component
                     </div>
                     <img id="new_york" src={friends}/>
                 </div>
-                <div className="about_us">
+                <div style={{backgroundColor: "#F5F5F5"}} className="about_us">
                     <Fade>
                         <h2>About Us</h2>
                         <p>As busy Americans it can be challenging to coordinate schedules and plan and schedule trips and activities with friends and families. This can be particularly irritating if there's an event you really really really want to attend, but can't find anyone to go with... <em>*cue the sad music*</em> <br /> <br /> 
@@ -59,7 +59,7 @@ class LandingPage extends React.Component
                         {/* <h3>But stress no more and say good bye to doing things alone!</h3> */}
                     </Fade>
                 </div>
-                <div className="using">
+                <div style={{backgroundColor: "#F5F5F5"}}  className="using">
                 <h2>Using Seeker</h2>
                     <Fade left cascade>
                     <div id="four_imgs">

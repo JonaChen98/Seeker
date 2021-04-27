@@ -29,7 +29,7 @@ class SignUpForm extends React.Component {
         return (
             <div className="login-signup-form">
                 <form onSubmit={this.handleSubmit}>
-                    <label>
+                    <label className="signup_labels">
                         email
                     </label>
                     <br />
@@ -37,7 +37,7 @@ class SignUpForm extends React.Component {
 
                     <br />
 
-                    <label>
+                    <label className="signup_labels">
                         first name
                     </label>
                     <br />
@@ -46,7 +46,7 @@ class SignUpForm extends React.Component {
                     <br />
 
 
-                    <label>
+                    <label className="signup_labels">
                         last name
                     </label>
                     <br />
@@ -54,7 +54,7 @@ class SignUpForm extends React.Component {
 
                     <br />
 
-                    <label> gender 
+                    <label className="signup_labels">gender
                         <br/ >
                         <select id="gender_selection_signup" name="gender" value={this.state.gender} onChange={this.handleChange}>
                             <option value="male">male</option>

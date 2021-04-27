@@ -4,8 +4,6 @@
 
 .login {
   margin: 0;
-  /* font-family: 'Montserrat', sans-serif; */
-  /* font-family: 'Spartan', sans-serif; */
   font-family: 'Raleway', sans-serif;
 }
 
@@ -21,24 +19,28 @@
 }
 
 #formtitle {
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 25px;
 }
 
 #form {
+  font-family: 'Raleway', sans-serif;
+  width: max-content;
   text-align: right;
   padding-top: 25vh;
   position: absolute;
   padding-left: 100px;
   width: 18vw;
-  /* background-color: red; */
   display: flex;
   flex-flow: column;
 }
 
 #gender_selection_signup {
-  width: 80px;
+  font-family: 'Raleway', sans-serif;
+  width: max-content;
   height: 29px; 
+  font-size: 13px;
   border: 1px solid #999999; 
   padding: 5px;
   border-radius: 5px;
@@ -48,9 +50,14 @@
 }
 
 #forms_container {
+  font-family: 'Raleway', sans-serif;
   line-height: 3vh;
   display: flex;
   flex-flow: column;
+}
+
+.login-item, .signup_labels{
+  font-size: 15px;
 }
 
 .login_signup_button{
@@ -63,9 +70,8 @@
 }
 
 .login_text_field, .signup_text_field{
-  /* margin-right: 90px; */
   width: 250px; 
-  height: 20px; 
+  height: 23px; 
   border: 1px solid #999999; 
   padding: 5px;
   border-radius: 5px;
@@ -82,7 +88,6 @@
   border-radius: 3px;
   height: 30px;
   width: 4vw;
-  /* font-size: 2vh; */
 }
 
 #start_seeking {

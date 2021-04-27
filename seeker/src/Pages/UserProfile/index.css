@@ -1,7 +1,39 @@
-/* #user_profile_things{} */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;300;600&display=swap');
 
 body{
     background-color: #F5F5F5;
+}
+
+#first_slant{
+    margin-top: -370px;
+    background-color: #FFA69E;
+    transform: rotate(45deg);
+    width:350px;
+    z-index: -10;
+    height: 700px;
+    position: fixed;
+}
+
+#second_slant{
+    margin-top: -747px;
+    transform: rotate(45deg);
+    z-index: -10;
+    background-color: #5E6472;
+    height: 2000px;
+    width: 250px;
+    position: fixed;
+    margin-left: 50px;
+}
+
+#third_slant {
+    margin-top: -644px;
+    transform: rotate(45deg);
+    z-index: -10;
+    background-color: #BEE3DB;
+    height: 2500px;
+    width: 250px;
+    position: fixed;
+    margin-left: 50px;
 }
 
 #user_profile_things::-webkit-scrollbar {

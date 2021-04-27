@@ -3,7 +3,7 @@ import './login_signup.css'
 import SignUpForm from './SignUpForm'
 import LoginForm from './LoginForm'
 import ImageGrid from './ImageGrid'
-import Fade from 'react-reveal/Fade';
+import './index.css'
 
 class LoginSignup extends React.Component
 {
@@ -37,15 +37,6 @@ class LoginSignup extends React.Component
         }
     }
 
-    // componentDidUpdate() {
-    //     if(this.state.showLogin) {
-    //         console.log("wants login")
-    //     }
-    //     else {
-    //         console.log("wants signup")
-    //     }
-    // }
-
     render(){
         if(this.state.showLogin === false) {
             return (
@@ -54,10 +45,8 @@ class LoginSignup extends React.Component
                         <ImageGrid />
                         <div id="forms_container">
                             <div id="form">
-                                {/* <div> */}
                                 <h3 id="formtitle">Seeker</h3>
-                                {/* </div> */}
-                                <div id="two_buttons">
+                                <div  id="two_buttons">
                                     <button onClick={() => this.setState({showLogin : true})} class="login_signup_button" style={{color:"black",backgroundColor:"transparent"}}>login</button>
                                     <button onClick={() => this.setState({showLogin : false})} onClick={this.onChange}  class="login_signup_button" style={{backgroundColor:"#5e6472", color:"white"}}>signup</button>
                                 </div>

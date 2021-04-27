@@ -1,22 +1,16 @@
-import LandingPage from './Pages/Landing/LandingPage'
-
+import React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
-import LoginSignup from './Pages/LoginSignup/index'
-import UserProfile from './Pages/UserProfile/index'
+import AppRouter from './router'
 
 function App() {
   return (
     <>
       <Router>
-        <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/a" component={LoginSignup} />
-          <Route exact path="/p" component={UserProfile} />
-        </Switch>
+        <AppRouter />
       </Router>
     </>
   );
