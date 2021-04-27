@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap');
 
 #nav_container {
-    position: relative;
+    position: fixed;
     /* background-color: red; */
     display: flex;
     flex-flow: row;

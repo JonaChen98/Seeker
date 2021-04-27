@@ -1,4 +1,5 @@
 #events_bar_search{
+    font-family: 'Raleway', sans-serif;
     background-color: white;
     width: 78vw;
     display: flex;
@@ -14,6 +15,7 @@
 }
 
 .event_search_input{
+    font-family: 'Raleway', sans-serif;
     height: 30px;
     margin: 5px;
     border-radius: 4px;
@@ -21,5 +23,6 @@
 }
 
 #events_search_title{
+    font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }

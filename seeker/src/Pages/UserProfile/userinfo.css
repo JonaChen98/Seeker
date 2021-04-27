@@ -2,7 +2,6 @@
 
 #user_info_container {
     position: fixed;
-    margin-top: -80px;
     margin-left: 75vw;
     display: flex;
     flex-flow: column;

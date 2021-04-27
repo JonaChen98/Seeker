@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import './EventsSearch.css'
 import { Card, Icon, Image } from 'semantic-ui-react'
 import DatePicker from "react-datepicker";
-
 import "react-datepicker/dist/react-datepicker.css";
 
 export default function EventsSearch(){

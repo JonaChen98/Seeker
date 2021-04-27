@@ -1,10 +1,9 @@
 import React from 'react';
 import './Landing.css';
 import { Link } from "react-router-dom";
-
-// import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
+import { Icon } from 'semantic-ui-react'
 
 import friends from '../../images/friend_group.jpeg'
 import newyork from '../../images/newyork.jpeg'
@@ -83,7 +82,7 @@ class LandingPage extends React.Component
                     </Fade>
                 </div>
                 <div id="footer">
-                <p id="stmt">Get started with Seeker today <Bounce>;)</Bounce></p>
+                <p id="stmt">Get started with Seeker today <Bounce><Icon name='paper plane outline'/></Bounce></p>
                 </div>
             </>
         )
