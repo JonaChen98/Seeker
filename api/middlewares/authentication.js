@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
-const User = require('../models').user;
+const User = require('../models').User;
 
 
 function passwordsMatch(submittedPassword, storedPasswordHash) {
@@ -42,11 +42,11 @@ passport.use(new LocalStrategy({
   })
 );
 
-passport.serializeUser((user, done) => { // if login is good, changing it to text and wriring it into cookie
+passport.serializeUser((user, done) => {
   done(null, user.id);
 });
 
-passport.deserializeUser((id, done) => { // deseralize the cookie and read it
+passport.deserializeUser((id, done) => {
   User.findByPk(id)
     .then((user) => {
       if (!user) {

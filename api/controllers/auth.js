@@ -10,6 +10,7 @@ router.post('/signup', (req, res) => {
     lastName: req.body.lastName,
     email: req.body.email,
     password: req.body.password,
+    gender: req.body.gender
   })
     .then((user) => {
       req.login(user, () => res.status(201).json(user));
@@ -32,4 +33,4 @@ router.post('/logout', (req, res) => {
   res.status(200).json({ message: 'Logout successful' });
 })
 
-module.exports = router;
+module.exports = router;  

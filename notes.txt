@@ -1,7 +1,2 @@
 Database:
     - request table needs to be edited
-
-Register
-    - check if email is unique
-    - hash password (bcrypt)
-    - sanitize input?
