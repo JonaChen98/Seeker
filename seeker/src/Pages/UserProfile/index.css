@@ -6,7 +6,8 @@ body{
 
 #first_slant{
     margin-top: -370px;
-    background-color: #FFA69E;
+    /* background-color: #FFA69E; */
+    background-color: #faf3dd;
     transform: rotate(45deg);
     width:350px;
     z-index: -10;

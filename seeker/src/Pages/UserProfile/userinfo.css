@@ -14,7 +14,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
-#profile_settings_button {
+#profile_edit_button {
     width: 70px;
     font-size: 12px;
     font-weight: 300;
@@ -24,6 +24,12 @@
     border-radius: 5px;
     margin-left: 270px;
     margin-top: 15px;
+}
+
+#profile_edit_button:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
 }
 
 #profile_logout_button {
@@ -40,12 +46,31 @@
     margin-top: 5px;
 }
 
+#profile_logout_button:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
 .user_info_item {
     font-family: 'Raleway', sans-serif;
     margin-top: 20px;
     align-items: center;
     text-align: center;
     line-height: 0.2px;
+}
+
+#social_media{
+    background-color: red;
+    width: max-content;
+    display: flex;
+    flex-flow: row;
+}
+
+.sm_icons{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
 }
 
 #user_image {
