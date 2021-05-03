@@ -44,6 +44,9 @@ module.exports = (sequelize, DataTypes) => {
     models.Request.hasMany(models.User);
     models.Request.hasMany(models.User);
     models.Request.hasMany(models.Event);
+    // models.User.belongsToMany(models.Event, {through: 'Request'});
+    // models.User.belongsToMany(models.Event, {through: 'Request'});
+   
   };
 
   return Request;

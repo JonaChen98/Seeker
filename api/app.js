@@ -6,6 +6,7 @@ const db = require('./models');
 const passport = require('./middlewares/authentication');
 const app = express();
 const PORT = process.env.PORT;
+const seed = require('./seed');
 
 
 // this lets us parse 'application/json' content in http requests
@@ -38,7 +39,11 @@ if(process.env.NODE_ENV==='production') {
 
 // update DB tables based on model updates. Does not handle renaming tables/columns
 // NOTE: toggling this to true drops all tables (including data)
-db.sequelize.sync({ force: false });
+// db.sequelize.sync({ force: false });
+
+
+// fill the events table in db
+seed();
 
 // start up the server
 if(PORT) {
