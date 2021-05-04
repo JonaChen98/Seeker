@@ -8,7 +8,7 @@ import LandingPage from './Pages/Landing/LandingPage'
 
 export default function AppRouter() {
     return (
-         <>
+        //  <>
             <Switch>
                 <Route exact path='/' component={LandingPage} />
                 <Route exact path='/events' component={EventsAndMap} />
@@ -17,6 +17,6 @@ export default function AppRouter() {
                 <Redirect from="/" to="/landing" />
                 {/* <Redirect to="/error404" /> */}
             </Switch>
-         </>
+        //  </>
     )
 }

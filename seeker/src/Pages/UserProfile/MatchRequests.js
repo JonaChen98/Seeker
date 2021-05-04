@@ -1,13 +1,6 @@
 import React from 'react'
 import './matchrequests.css'
-import people from '../../images/twopeople.jpeg'
-import boats from '../../images/boats.jpeg'
 import person1 from '../../images/person1.jpeg'
-import person2 from '../../images/person2.jpeg'
-import person3 from '../../images/person3.jpeg'
-import person4 from '../../images/person4.jpeg'
-import person5 from '../../images/person5.jpeg'
-import person6 from '../../images/person6.jpeg'
 import accept from '../../images/check.png'
 import reject from '../../images/reject.png'
 

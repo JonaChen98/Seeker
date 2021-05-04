@@ -37,6 +37,7 @@ class EventsBar extends React.Component {
                     {/* <Loading /> */} 
                     <BarEventItem />
                 </div>
+                {/* <EventInformation /> */}
             </>
         )
     }

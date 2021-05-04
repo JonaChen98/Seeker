@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './EventInfo.css'
+import EventDescription from './EventDescription'
+import AttendeeList from './AttendeeList'
 
-export default class EventInformation extends React.Component {
-    constructor(props){
-        super(props);
-        this.state={
-            event_id:""
-        }
+export default function EventInformation(props) {
+    const [showDescript, setShowDescript] = useState(true)
+    const [isGoing, setIsGoing] = useState(false)
+
+    function handleClick(){
+        setShowDescript(!showDescript)
     }
 
-    render(){
-        return(
-            <>
-                <div id="event_info_container">
-                    <h3 id="event_name">Event Name</h3>
-                </div>
-            </>
-        )
+    function handleGoing(){
+        setIsGoing(!isGoing)
     }
+
+    return(
+        <>
+        <div> 
+            { showDescript && <EventDescription handleGoing={handleGoing} handleClick={handleClick} /> }
+            { !showDescript && <AttendeeList handleClick={handleClick} /> }
+        </div>
+        </>
+    )
 }
