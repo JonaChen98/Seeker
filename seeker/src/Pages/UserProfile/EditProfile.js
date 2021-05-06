@@ -196,6 +196,13 @@ export default function EditProfile(props) {
                             <input className="edit_info_text_field" type="text" onChange={onChange} value={facebook_link} name="facebook_link" />
                         </div>
 
+                        <div id="bio">
+                            <label className="edit_info_labels">
+                                bio
+                            </label>
+                            <input className="edit_info_text_field" type="text" onChange={onChange} value={bio} name="bio" />
+                        </div>
+
                         <div id="submit_button_div" />
                         <div id="submit_button_div">
                             <button id="submit_edits" onClick={onSubmit}  type="submit" value="save">update</button>
