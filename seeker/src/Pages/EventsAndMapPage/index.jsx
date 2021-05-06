@@ -12,7 +12,7 @@ export default function EventsAndMap(){
                 <EventsBar />
                 <div style={{display:"flex", flexFlow:"column",overflow:"hidden"}}>
                     <EventsSearch />
-                    {/* <MapContainer /> */}
+                    <MapContainer />
                 </div>
             </div>  
         </>
