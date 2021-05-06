@@ -13,6 +13,7 @@ export default function EventsSearch(){
                 <input className="event_search_input" type="text" placeholder="area/zipcode" />
                 <label>or</label>
                 <DatePicker className="event_search_input" selected={startDate} onChange={date => setStartDate(date)} />
+                <button id="search_button">find</button>
             </div>
         </>
     )

@@ -27,3 +27,17 @@
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }
+
+#search_button{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+    color:black;
+    font-family: 'Raleway', sans-serif;
+}
+
+#search_button:hover{
+    background-color: black;
+    color:white;
+    transition:1s;
+}

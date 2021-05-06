@@ -62,7 +62,7 @@ export default function AttendeeList(props) {
                                                 flexFlow:"column"
                                             }}
                                         >
-                                            <div style={{textAlign:"left", marginLeft:"5px", color:"black", width:"150px", height:"max-content", fontSize:"16px", fontWeight:"600",fontFamily:"'Raleway', sans-serif"}}>Steve Sanders</div>
+                                            <div style={{textAlign:"left", marginLeft:"5px", color:"black", width:"150px", height:"max-content", fontSize:"16px", fontWeight:"600",fontFamily:"'Raleway', sans-serif"}}>Steve</div>
                                         </div>
                                         <button id="send_req"
                                             style={{

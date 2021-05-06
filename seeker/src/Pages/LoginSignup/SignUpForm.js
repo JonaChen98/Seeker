@@ -33,7 +33,7 @@ class SignUpForm extends React.Component {
                         email
                     </label>
                     <br />
-                    <input class="signup_text_field" type="text" value={this.state.email} name="email" onChange={this.handleChange} required />
+                    <input className="signup_text_field" type="text" value={this.state.email} name="email" onChange={this.handleChange} required />
 
                     <br />
 
@@ -41,7 +41,7 @@ class SignUpForm extends React.Component {
                         first name
                     </label>
                     <br />
-                    <input class="signup_text_field" type="text" value={this.state.firstName} name="firstName" onChange={this.handleChange} required />
+                    <input className="signup_text_field" type="text" value={this.state.firstName} name="firstName" onChange={this.handleChange} required />
                     
                     <br />
 
@@ -50,7 +50,7 @@ class SignUpForm extends React.Component {
                         last name
                     </label>
                     <br />
-                    <input class="signup_text_field" type="text" value={this.state.lastName} name="lastName" onChange={this.handleChange} placeholder="optional" />
+                    <input className="signup_text_field" type="text" value={this.state.lastName} name="lastName" onChange={this.handleChange} placeholder="optional" />
 
                     <br />
 
