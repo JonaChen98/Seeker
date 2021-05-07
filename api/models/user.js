@@ -53,7 +53,9 @@ module.exports = (sequelize, DataTypes) => {
 
   User.associate = (models) => {
     // associations can be defined here
-    models.User.belongsToMany(models.Event, {through: 'Attendance'})
+    models.User.belongsToMany(models.Event, {through: 'Attendance'});
+    models.User.hasOne(models.Request, {as: "requestor"});
+    models.User.hasOne(models.Request, {as: "requestee"});
   };
 
   User.beforeSave((user, options) => { //hashes the provided password and storing it in the db

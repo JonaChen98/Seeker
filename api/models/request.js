@@ -41,9 +41,9 @@ module.exports = (sequelize, DataTypes) => {
   Request.associate = (models) => {
     // associations can be defined here
     // not sure about this part
-    models.Request.hasMany(models.User);
-    models.Request.hasMany(models.User);
-    models.Request.hasMany(models.Event);
+    // models.Request.hasOne(models.User, {as: "requestor"});
+    // models.Request.hasOne(models.User, {as: "requestee"});
+    //models.Request.hasMany(models.Event);
     // models.User.belongsToMany(models.Event, {through: 'Request'});
     // models.User.belongsToMany(models.Event, {through: 'Request'});
    
