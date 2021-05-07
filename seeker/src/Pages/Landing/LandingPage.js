@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 import { Icon } from 'semantic-ui-react'
 
+
 import friends from '../../images/friend_group.jpeg'
 import newyork from '../../images/newyork.jpeg'
 import twopeople from '../../images/twopeople.jpeg'
@@ -25,29 +26,37 @@ class LandingPage extends React.Component
         return(
             <>
                 <div>
-                    <p className ="landing_seeker">Seeker</p>
-                    <div id="buttons">
-                        <Link to={{
-                            pathname:'/loginsignup',
-                            state:{
-                                fromLogin: true
-                            }
-                        }}>
-                            <button id ="login_button">Login</button>
-                        </Link>
-                        <Link to={{
-                            pathname:'/loginsignup',
-                            state:{
-                                fromLogin: false
-                            }
-                        }}>
-                            <button id ="sign_up">Sign Up</button>
-                        </Link>
+                    <div id="top">
+                        <Fade><p className ="landing_seeker">Seeker</p></Fade>
+                        <div id="buttons">
+                            <div>
+                                <Link to={{
+                                    pathname:'/loginsignup',
+                                    state:{
+                                        fromLogin: true
+                                    }
+                                }}>
+                                    <button id ="login_button">Login</button>
+                                </Link>
+                            </div>
+                            <div>
+                                <Link to={{
+                                    pathname:'/loginsignup',
+                                    state:{
+                                        fromLogin: false
+                                    }
+                                }}>
+                                    <button id ="sign_up">Sign Up</button>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
-                    <div id="quote_subquote">
-                        <h1 id="landing_quote">Everything's better with friends</h1>
-                        <h3 id="dare">Seeker was created to improve (dare we say, maybe even resurrect) your social life.</h3>
-                    </div>
+                        <div id="quote_subquote">
+                            <Fade>
+                                <h1 id="landing_quote">Everything's better with friends</h1>
+                                <h3 id="dare">Seeker was created to improve (dare we say, maybe even resurrect) your social life.</h3>
+                            </Fade>
+                        </div>
                     <img id="new_york" src={friends}/>
                 </div>
                 <div style={{backgroundColor: "#F5F5F5"}} className="about_us">

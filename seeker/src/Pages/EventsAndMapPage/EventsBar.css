@@ -22,11 +22,11 @@
 }
 
 #events_bar_container{
-    margin-top: 85px;
+    margin-top: 75px;
     font-family: 'Raleway', sans-serif;
     display: flex;
     flex-flow: column;
-    height: 90vh;
+    height: 92vh;
     width: 22vw;
     align-items: center;
     padding-top: 10px;

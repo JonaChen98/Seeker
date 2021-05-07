@@ -21,19 +21,16 @@ img {
 
 .landing_seeker{
   position: absolute;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 25px;
   z-index: 10;
   color: white;
   font-size: 28px;
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
-  /* font: weight 200px; */
 }
 
 #new_york {
-  /* min-width: 400px;
-  min-height: 300px; */
   object-fit: cover;
   width: 100vw;
   height: 100vh;
@@ -48,19 +45,16 @@ img {
   margin-left: 10vw;
   margin-right: 10vw;
   font-size: 3.5em;
-  /* z-index: 10; */
 }
 
 #dare
 {
-  /* position: absolute; */
   color: white;
   font-family: 'Raleway', sans-serif;
   margin-top: -13px;
   margin-left: 10vw;
   margin-right: 10vw;
   font-size: 1.2em;
-  /* font-size: 30px; */
   font-weight: 500;
 }
 
@@ -72,16 +66,28 @@ img {
   margin-top: -50px;
 }
 
+#top{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+#buttons{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  background-color: crimson;
+}
+
 #login_button 
 {
-  /* display: inline-block; */
   min-height: 30px;
   min-width: 10px;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   z-index: 10;
   margin-left: 83vw;
-  margin-top: 50px;
+  margin-top: 34px;
   color:white;
   position: absolute;
   width: 80px;
@@ -95,21 +101,17 @@ img {
 #sign_up
 {
   min-width: 10px;
-  /* display: inline-block; */
-  /* float:left; */
   min-height: 30px;
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
   z-index: 10;
   margin-left: 89vw;
-  margin-top: 50px;
+  margin-top: 34px;
   color:white;
   position: absolute;
   width: 80px;
   height: 34px;
   font-size: 12px;
-  /* background: #DAA49A;
-  border: solid 1px #DAA49A; */
   background: #5e6472;
   border: solid 1px #5e6472;
   border-radius: 13px;

@@ -35,7 +35,7 @@
 // })(MapContainer);
 
 import React, { Component } from 'react';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '400px',
@@ -43,21 +43,30 @@ const containerStyle = {
 };
 
 const mapStyles = {
-  height:"83vh", 
+  height:"84vh", 
   width:"78vw", 
   flexShrink:"2",
   float:"left", 
   zIndex:"1", 
   marginLeft:"22vw", 
   float:"left", 
-  marginTop:"140px",
+  marginTop:"128px",
   zIndex:"0"
 };
+
+const onLoad = marker => {
+  console.log('marker: ', marker)
+}
 
 const center = {
   lat: 40.75,
   lng: -73.88
 };
+
+const position = {
+  lat: 40.7812,
+  lng: -73.9665
+}
 
 export default class MapContainer extends Component {
   render() {
@@ -70,7 +79,16 @@ export default class MapContainer extends Component {
           center={center}
           zoom={12}
         >
-          <></>
+          <>
+            <Marker
+              onLoad={onLoad}
+              position={position}
+            />
+            <Marker
+              onLoad={onLoad}
+              position={center}
+            />
+          </>
         </GoogleMap>
       </LoadScript>
     )
