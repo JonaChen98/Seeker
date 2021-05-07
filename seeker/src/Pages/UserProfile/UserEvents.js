@@ -4,11 +4,13 @@ import pottery from '../../images/pottery.jpeg'
 import ai from  '../../images/ai.jpeg'
 import js from  '../../images/js.jpeg'
 import sculpt from  '../../images/sculpture.jpeg'
+import boats from  '../../images/boats.jpeg'
 
 import 'semantic-ui-css/semantic.min.css'
 import { Button, Card, Image } from 'semantic-ui-react'
 
 import Fade from 'react-reveal/Fade';
+import { assignInWith } from 'lodash-es'
 
 class UserEvents extends React.Component {
     constructor() {
@@ -31,77 +33,53 @@ class UserEvents extends React.Component {
             <>
             <Fade bottom>
                 <div id="user_events_container">
-                    <h3 id="events_section_title">Your Events</h3>
                     <Fade>
-                    <Card.Group style={{ height:"30vh", marginTop:"15px", marginLeft:"20px", width:"62vw",  marginRight:"5px", display:"flex", flexFlow:"row", overflow:"scroll", flexWrap:"wrap"}} className="events_container_items">
-                        <Fade bottom cascade>
-                            <Card style={{
-                                backgroundColor:"transparent",
-                                flexShrink:"0",
-                                borderRadius:"7px",
-                                boxShadow:"none",
-                                height:"max-content",
-                                width:"430px",
-                                display:"flex",
-                                flexFlow:"row"
-                            }}>
-                                <Card.Content
-                                    style={{
-                                    display:"flex",
-                                    flexFlow:"row"
-                                    }}
-                                >
-                                    <Image
-                                    floated='right'
-                                    size='mini'
-                                    src={pottery}
-                                    style={{
-                                        height:"100px",
-                                        width:"100px",
-                                        borderRadius:"7px",
-                                        objectFit:"cover"
-                                    }}
-                                    />
-                                    <div
-                                        style={{
-                                            display:"flex",
-                                            flexFlow:"column"
-                                        }}
-                                    >
-                                    <Card.Header style={{textAlign:"left", marginLeft:"5px", color:"black", fontSize:"20px", fontWeight:"600",fontFamily:"'Raleway', sans-serif"}}>Pottery Class</Card.Header>
-                                    <Card.Description style={{fontFamily:"'Raleway', sans-serif",textAlign:"left", marginLeft:"5px", color:"black"}}>
-                                        Virtual
-                                    </Card.Description>
-                                    <Card.Description style={{fontFamily:"'Raleway', sans-serif",textAlign:"left", marginLeft:"5px", color:"black"}}>
-                                        9:45am
-                                    </Card.Description>
-                                    </div>
-                                </Card.Content>
-                                <Card.Content extra>
-                                    <div>
-                                        <Button 
-                                            style={{
-                                                height:"25px", 
-                                                width:"60px", 
-                                                backgroundColor:"transparent",
-                                                marginRight:"0.5px", 
-                                                borderRadius:"4px",
-                                                boxShadow:"none",
-                                                textAlign:"center",
-                                                display:"inline-block",
-                                                margin: "0 auto",
-                                                marginTop:"77px",
-                                                padding: "0",
-                                                fontSize:"13px",
-                                                "fontFamily": "'Raleway', sans-serif"
-                                            }}  basic color='black' value="cancel" onClick={this.onCancel}>
-                                                Cancel
-                                        </Button>
-                                    </div>
-                                </Card.Content>
-                            </Card>
-
-                        </Fade> 
+                    <Card.Group style={{ height:"81vh", width:"70vw",  display:"flex", flexFlow:"row", overflow:"scroll", flexWrap:"wrap"}} className="events_container_items">
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={sculpt} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Renaissance</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel} id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={ai} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Future of AI</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={pottery} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Pottery Class</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={js} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Intro to Vue.js</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={boats} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Central Park Boat House</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
                                                     
                     </Card.Group>
                     </Fade>

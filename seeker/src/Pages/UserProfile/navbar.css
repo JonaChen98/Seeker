@@ -4,11 +4,12 @@
     position: fixed;
     display: flex;
     flex-flow: row;
-    width: 100vw;
+    width: 80vw;
     justify-content: space-between;
     height: 8vh;
     padding-right: 30px;
-    /* background-color: crimson; */
+    margin-left: 20vw;
+    background-color: white;
 }
 
 #profile_nav_left{
@@ -28,7 +29,7 @@
     margin-left: 25px;
     z-index: 10;
     color:black;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
 }
 
@@ -40,10 +41,10 @@
     align-items: center;
     padding: 25px;
     position: sticky;
-    margin-top: 10px;
+    margin-top: 4px;
     z-index: 10;
     color:black;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
 }
 

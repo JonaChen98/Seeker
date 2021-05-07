@@ -60,8 +60,6 @@ function UserInfo () {
             {/* <Fade right> */}
             <div id="user_info_container">
                 <Fade>
-                    <button onClick={goToEditPage} id="profile_edit_button">settings</button>
-                    <button onClick={logout_req} id="profile_logout_button">logout</button>
                     <div className="user_info_item">
                         <img id="user_image" src={people} />
                         <h4 id="user_name"> Katy Johnson</h4> 
@@ -84,6 +82,10 @@ function UserInfo () {
                             <p id="user_drug_info">drugs: yes </p>
                             <h4 style={{marginTop:"25px"}} id="user_about_heading"> bio </h4> 
                             <p id="user_bio">bio here</p>
+                        </div>
+                        <div id="profile_buttons">
+                            <button onClick={goToEditPage} id="profile_edit_button">settings</button>
+                            <button onClick={logout_req} id="profile_logout_button">logout</button>
                         </div>
                     </div>
                 </Fade>

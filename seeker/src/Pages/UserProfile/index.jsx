@@ -9,7 +9,27 @@ import './index.css'
 class UserProfile extends React.Component {
     constructor() {
         super();
-        this.state={}
+        this.state={
+            showEvents: true,
+            showMatches: false,
+            showRequests: false
+        }
+
+        this.setShowMatches = this.setShowMatches.bind(this)
+        this.setShowEvents = this.setShowEvents.bind(this)
+        this.setShowRequests = this.setShowRequests.bind(this)
+    }
+
+    setShowMatches(boolean) {
+        this.setState({showMatches : boolean})
+    }
+
+    setShowEvents(boolean) {
+        this.setState({showEvents : boolean})
+    }
+
+    setShowRequests(boolean) {
+        this.setState({showRequests : boolean})
     }
 
     render() {
@@ -17,16 +37,26 @@ class UserProfile extends React.Component {
             <>
                 <div style={{position:"relative", height:"100vh"}}>
                     <Navbar />
-                    <div id="first_slant"/>
-                    <div id="second_slant"/>
-                    <div id="third_slant"/>
-                    <div id="profile_items" style={{display:"flex", zIndex:"10", flexDirection:"row"}}>
-                        <div id="user_profile_things" style={{ display:"flex", flexDirection:"column", position:"fixed", marginTop:"10vh", height:"90vh", overflow:"scroll"}}>
-                            <MatchRequests />
-                            <UserEvents />
-                            <UserMatches />
-                        </div>
+                    <div>
                         <UserInfo  />
+                        <div id="user_dash_nav">
+                            <div id="dash_options">
+                                <div className="dash_item">
+                                    <button id="to_events" className="dash_nav_button"><h2 className="dash_section_title">my events</h2></button>
+                                </div>
+                                <div className="dash_item">
+                                    <button id="to_matches" className="dash_nav_button"><h2 className="dash_section_title">my events</h2></button>
+                                </div>
+                                <div className="dash_item">
+                                    <button id="to_reqs" className="dash_nav_button"><h2 className="dash_section_title">my events</h2></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="user_dash_items_">
+                            <UserEvents />
+                            {/* <h1>hello</h1> */}
+                        </div>
+                        
                     </div>
                 </div>
             </>
