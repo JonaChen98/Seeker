@@ -7,10 +7,9 @@ import sculpt from  '../../images/sculpture.jpeg'
 import boats from  '../../images/boats.jpeg'
 
 import 'semantic-ui-css/semantic.min.css'
-import { Button, Card, Image } from 'semantic-ui-react'
+import { Card } from 'semantic-ui-react'
 
 import Fade from 'react-reveal/Fade';
-import { assignInWith } from 'lodash-es'
 
 class UserEvents extends React.Component {
     constructor() {
@@ -53,6 +52,180 @@ class UserEvents extends React.Component {
                                 <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
                             </div>
                         </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={pottery} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Pottery Class</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={js} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Intro to Vue.js</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={boats} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Central Park Boat House</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+
+
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={pottery} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Pottery Class</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={js} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Intro to Vue.js</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={boats} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Central Park Boat House</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+
+
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={pottery} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Pottery Class</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={js} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Intro to Vue.js</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={boats} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Central Park Boat House</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+
+
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={pottery} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Pottery Class</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={js} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Intro to Vue.js</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={boats} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Central Park Boat House</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+
+
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={pottery} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Pottery Class</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={js} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Intro to Vue.js</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={boats} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Central Park Boat House</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+
+
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={pottery} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Pottery Class</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={js} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Intro to Vue.js</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+                        <div id="user_event_item">
+                            <img id="user_event_img" src={boats} />
+                            <div id="user_event_info">
+                                <h1 id="user_event_title">Central Park Boat House</h1>
+                                <h2 id="user_event_date_time">Monday, June 29, 2021</h2>
+                                <h2 id="user_event_date_time">10:45AM</h2>
+                                <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
+                            </div>
+                        </div>
+
+
                         <div id="user_event_item">
                             <img id="user_event_img" src={pottery} />
                             <div id="user_event_info">
