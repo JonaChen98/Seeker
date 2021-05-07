@@ -34,6 +34,7 @@ body{
     flex-flow: row;
     width: 60vw;
     height: 30px;
+    margin-top: 5px;
     /* background-color: crimson; */
     align-items: center;
     justify-content: space-evenly;

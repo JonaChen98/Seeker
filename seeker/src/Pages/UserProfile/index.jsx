@@ -45,10 +45,10 @@ class UserProfile extends React.Component {
                                     <button id="to_events" className="dash_nav_button"><h2 className="dash_section_title">my events</h2></button>
                                 </div>
                                 <div className="dash_item">
-                                    <button id="to_matches" className="dash_nav_button"><h2 className="dash_section_title">my events</h2></button>
+                                    <button id="to_matches" className="dash_nav_button"><h2 className="dash_section_title">my matches</h2></button>
                                 </div>
                                 <div className="dash_item">
-                                    <button id="to_reqs" className="dash_nav_button"><h2 className="dash_section_title">my events</h2></button>
+                                    <button id="to_reqs" className="dash_nav_button"><h2 className="dash_section_title">match requests</h2></button>
                                 </div>
                             </div>
                         </div>

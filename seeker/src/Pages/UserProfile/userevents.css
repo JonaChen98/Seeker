@@ -44,7 +44,7 @@
 
 #user_events_container {
     padding-top: 17px;
-    padding-left: 65px;
+    padding-left: 60px;
     justify-content: center;
     position: fixed;
     height: 82vh;
@@ -56,7 +56,7 @@
 #user_event_item{
     position: relative;
     margin-bottom: 10px;
-    width: 300px;
+    width: 326px;
     margin-right: 10px;
     border-radius: 7px;
     height: 150px;
@@ -102,8 +102,6 @@
     font-size: 15px;
     font-weight: 300;
     margin-left:10px;
-    /* width:max-content;
-    height:max-content; */
     width: 180px;
     height: 25px;
 }
@@ -111,7 +109,7 @@
 #user_cancel_button{
     font-family: 'Raleway', sans-serif;
     position:relative;
-    margin-left: 235px;
+    margin-left: 258px;
     color:black;
     border: 1px solid white;
     background-color: white;
