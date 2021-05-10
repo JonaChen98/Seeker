@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap');
+
+#universal_nav_container {
+    position: fixed;
+    display: flex;
+    flex-flow: row;
+    width: 100vw;
+    justify-content: space-between;
+    height: 8vh;
+    /* background-color: crimson; */
+    padding-right: 30px;
+}
+
+#universal_nav_left{
+    display: flex;
+    flex-flow: row;
+}
+
+#universal_navbar_logo {
+    position: fixed;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    position: sticky;
+    /* margin-top: 10px; */
+    margin-left: 25px;
+    z-index: 10;
+    color:black;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.universal_nav_items {
+    position: fixed;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    position: sticky;
+    margin-top: 10px;
+    z-index: 10;
+    color:black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#universal_profile_link:hover,#universal_events_link:hover {
+    color: #5e6472;
+    transition: 1s;
+}
+
+#universal_nav_right{
+    margin-top: 30px;
+}
+
+#to_profile{
+    color:black;
+}
+
+#to_profile:hover{
+    color:#ffa69e;
+    transition: 1s;
+}
