@@ -7,8 +7,9 @@ import instagram from '../../images/instagram.png'
 import { useHistory, location } from 'react-router-dom'
 
 import Fade from 'react-reveal/Fade';
+import { propTypes } from 'react-bootstrap/esm/Image'
 
-function UserInfo () {
+function UserInfo (props) {
     const history = useHistory()
     // delete this once information is being fetched from an api
     const [info, setInfo] = useState({
@@ -27,9 +28,6 @@ function UserInfo () {
     })
 
     const { profile_picture, first_name, last_name, email, instagram_link, twitter_link, facebook_link, gender,drinks, devils_lettuce, drugs, bio } = info
-
-    // const onChange = e =>
-    //     setInfo({ ...info, [e.target.name]: e.target.value })
 
     function goToEditPage() {
         history.push({
@@ -84,7 +82,7 @@ function UserInfo () {
                             <p id="user_bio">bio here</p>
                         </div>
                         <div id="profile_buttons">
-                            <button onClick={goToEditPage} id="profile_edit_button">settings</button>
+                            <button onClick={props.setSettings} id="profile_edit_button">settings</button>
                             <button onClick={logout_req} id="profile_logout_button">logout</button>
                         </div>
                     </div>

@@ -34,6 +34,7 @@ class UserEvents extends React.Component {
                 <div id="user_events_container">
                     <Fade>
                     <Card.Group style={{ height:"81vh", width:"70vw",  display:"flex", flexFlow:"row", overflow:"scroll", flexWrap:"wrap"}} className="events_container_items">
+                        <Fade bottom cascade>
                         <div id="user_event_item">
                             <img id="user_event_img" src={sculpt} />
                             <div id="user_event_info">
@@ -253,7 +254,7 @@ class UserEvents extends React.Component {
                                 <button onClick={this.onCancel}  id="user_cancel_button">cancel</button>
                             </div>
                         </div>
-                                                    
+                        </Fade>                    
                     </Card.Group>
                     </Fade>
                 </div>
