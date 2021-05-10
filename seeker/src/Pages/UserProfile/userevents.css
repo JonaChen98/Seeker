@@ -72,7 +72,7 @@
     filter:brightness(40%)
 }
 
-#user_event_img:hover{
+#user_event_item:hover{
     box-shadow: 0em 0em 0.5em .01em gray;
 }
 

@@ -27,81 +27,240 @@ class UserMatches extends React.Component {
             <> 
             <Fade bottom>
                 <div id="user_matches_container">
-                    <h3 id="user_matches_title">Your Matches</h3>
                     <Fade>
-                        <Card.Group style={{ height:"30vh", marginTop:"15px", marginLeft:"20px", width:"62vw",  marginRight:"5px", display:"flex", flexFlow:"row", overflow:"scroll", flexWrap:"wrap"}} className="user_matches_items">
+                        <Card.Group className="user_matches_items">
                         <Fade bottom cascade>
-                            <Card style={{
-                                backgroundColor:"transparent",
-                                flexShrink:"0",
-                                borderRadius:"7px",
-                                boxShadow:"none",
-                                height:"max-content",
-                                width:"430px",
-                                display:"flex",
-                                flexFlow:"row"
-                            }}>
-                                <Card.Content
-                                    style={{
-                                    display:"flex",
-                                    flexFlow:"row"
-                                    }}
-                                >
-                                    <Image
-                                    floated='right'
-                                    size='mini'
-                                    src={person}
-                                    style={{
-                                        height:"100px",
-                                        width:"100px",
-                                        borderRadius:"7px",
-                                        objectFit:"cover"
-                                    }}
-                                    />
-                                    <div
-                                        style={{
-                                            display:"flex",
-                                            flexFlow:"column"
-                                        }}
-                                    >
-                                    <Card.Header style={{textAlign:"left", marginLeft:"5px", color:"black", fontSize:"20px", fontWeight:"600",fontFamily:"'Raleway', sans-serif"}}>Valentina R.</Card.Header>
-                                    <Card.Description style={{fontFamily:"'Raleway', sans-serif",textAlign:"left", marginLeft:"5px", color:"black"}}>
-                                        Pottery Class
-                                    </Card.Description>
-                                    <Card.Description style={{fontFamily:"'Raleway', sans-serif",textAlign:"left", marginLeft:"5px", color:"black"}}>
-                                        9:45am
-                                    </Card.Description>
-                                    </div>
-                                </Card.Content>
-                                <Card.Content extra>
-                                    <div>
-                                        <Button 
-                                            style={{
-                                                height:"25px", 
-                                                width:"60px", 
-                                                backgroundColor:"transparent",
-                                                marginRight:"0.5px", 
-                                                borderRadius:"4px",
-                                                boxShadow:"none",
-                                                textAlign:"center",
-                                                display:"inline-block",
-                                                margin: "0 auto",
-                                                marginTop:"77px",
-                                                padding: "0",
-                                                fontSize:"13px",
-                                                "fontFamily": "'Raleway', sans-serif"
-                                            }}  basic color='black' value="cancel" onClick={this.onMatchRemove}>
-                                                Remove
-                                        </Button>
-                                    </div>
-                                </Card.Content>
-                            </Card>
-
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
+                        <div id="match_item">
+                            <img id="match_img" src={person} />
+                            <div id="match_info">
+                                <h1 id="match_name">Valentina R.</h1>
+                                <div id="sub_info">
+                                    <p id="match_event">Event Attending Together</p>
+                                    <p id="match_event_date">Event Date</p>
+                                    <p id="match_event_time">Event Time</p>
+                                </div>
+                            </div>
+                            <button onClick={this.onMatchRemove} id="remove_match">Remove</button>
+                        </div>
                         </Fade> 
                                                     
                     </Card.Group>
-                    
-                        
                     </Fade>
                 </div>
                 </Fade>
