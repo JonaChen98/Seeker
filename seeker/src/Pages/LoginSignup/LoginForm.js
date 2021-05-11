@@ -1,5 +1,6 @@
 import React from 'react'
 import './login_signup.css'
+import {Link} from 'react-router-dom'
 
 class LoginForm extends React.Component
 {
@@ -28,7 +29,7 @@ class LoginForm extends React.Component
         return(
             <>
                 <div className="login-container" className="login-signup-form">
-                    <form onSubmit={this.handleSubmit}>
+                    <form> 
                         <label className="login-item">username</label>
                         <br />
                         <input class="login_text_field login-item" type="text" name="username" />
@@ -41,7 +42,8 @@ class LoginForm extends React.Component
 
                         <br />
                         <br />
-                        <button id="loginbutton" type="submit" value="login">login</button>
+                        <Link to="/user_profile"><button id="loginbutton" type="submit" value="login">login</button></Link>
+                        
                     </form>
                 </div>
             </>

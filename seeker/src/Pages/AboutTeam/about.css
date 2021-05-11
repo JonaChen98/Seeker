@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;413;459;500;600&display=swap');
+
+#about_page{
+    width: 100vw;
+    height: 100vh;
+    background-color: crimson;
+}
+
+#about_seeker_section{
+    position: relative;
+    /* margin-top: 20px; */
+}
+
+#meet_team{
+    position: relative;
+}
