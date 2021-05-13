@@ -11,7 +11,9 @@
     height: 100vh;
     width: 20vw;
     /* background-color: #FAF3DD; */
-    background-color: #5E6472;
+    /* background-color: #bee3db; */
+    background-color: white;
+    border-right:1px solid #ffa69e;
     /* border-left: 1px solid white; */
     font-family: 'Raleway', sans-serif;
 }
@@ -39,8 +41,8 @@
 }
 
 #user_image {
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     border-radius: 100%;
     object-fit: cover;
 }
@@ -48,7 +50,7 @@
 #user_name {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    color:white;
+    color:black;
     font-weight: 500;
 }
 
@@ -58,21 +60,30 @@
     font-size: 20px;
     font-weight: 300;
     margin-left: 35px;
-    color: white;
+    color: black;
 }
 
 #user_info {
     font-family: 'Raleway', sans-serif;
     text-align: left;
     margin-top: 65px;
-    color: white;
+    color: black;
+    /* background-color: blue; */
+    height: 43vh;
 }
 
 #user_gender, #user_drink_info, #user_devils_info, #user_drug_info, #user_bio{
     font-family: 'Raleway', sans-serif;
     line-height: 2px;
     font-size: 15px;
-    color: white;
+    color: black;
+}
+
+#user_bio{
+    /* background-color: red; */
+    height: 10vh;
+    overflow: show;
+    /* width: 20vw; */
 }
 
 #profile_buttons{
@@ -88,7 +99,7 @@
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid black;
     background-color: white;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -110,7 +121,7 @@
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid black;
     background-color: white;
     color:black;
     border-radius: 5px;

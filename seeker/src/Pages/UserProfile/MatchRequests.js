@@ -1,6 +1,7 @@
 import React from 'react'
 import './matchrequests.css'
 import person1 from '../../images/person1.jpeg'
+import person2 from '../../images/person5.jpeg'
 import accept from '../../images/check.png'
 import reject from '../../images/reject.png'
 
@@ -35,89 +36,32 @@ class MatchRequests extends React.Component {
             <Fade bottom>
                 <div id="match_request_container">
                 <Fade>
-                    <h3 id="match_req_title">Match Requests</h3>
-                    <Card.Group style={{paddingLeft:"20px", marginLeft:"5px", marginRight:"5px", display:"flex", flexFlow:"row", overflow:"scroll"}} className="match_request_items">
-                        <Fade right cascade>
-                            <Card style={{
-                                backgroundColor:"transparent",
-                                flexShrink:"0",
-                                borderRadius:"7px",
-                                boxShadow:"none",
-                                height:"max-content",
-                                width:"400px",
-                                display:"flex",
-                                flexFlow:"row",
-                                marginRight:"30px",
-                            }}>
-                                <Card.Content
-                                    style={{
-                                    display:"flex",
-                                    flexFlow:"row"
-                                    }}
-                                >
-                                    <Image
-                                    floated='right'
-                                    size='mini'
-                                    src={person1}
-                                    style={{
-                                        height:"75px",
-                                        width:"75px",
-                                        borderRadius:"7px",
-                                        objectFit:"cover"
-                                    }}
-                                    />
-                                    <div
-                                        style={{
-                                            display:"flex",
-                                            flexFlow:"column"
-                                        }}
-                                    >
-                                    <Card.Header style={{textAlign:"left", marginLeft:"5px", color:"black", fontSize:"15px", fontWeight:"600",fontFamily:"'Raleway', sans-serif"}}>Steve Sanders</Card.Header>
-                                    <Card.Description style={{fontFamily:"'Raleway', sans-serif",textAlign:"left", marginLeft:"5px", color:"black"}}>
-                                    wants to connect with you. Both of you are attending <strong>Event Name </strong>
-                                    </Card.Description>
-                                    </div>
-                                </Card.Content>
-                                <Card.Content extra>
-                                    <div className='ui two buttons' style={{display:"flex", flexFlow:"row", marginTop:"55px", marginLeft:"-10px"}}>
-                                        <div id="yes_button">
-                                            <Button 
-                                                style={{
-                                                    height:"30px", 
-                                                    width:"30px", 
-                                                    marginRight:"0.5px", 
-                                                    borderRadius:"7px",
-                                                    textAlign:"center",
-                                                    display:"inline-block",
-                                                    margin: "0 auto",
-                                                    padding: "0",
-                                                    fontSize:"12px"
-                                                }}  basic color='black' onClick={this.onAccept}>
-                                                    <img style={{height:"10px", width:"13px"}} src={accept} 
-                                                    
-                                                />
-                                            </Button>
-                                        </div>
-                                        <div id="no_button">
-                                            <Button 
-                                                style={{
-                                                    height:"30px", 
-                                                    width:"30px", 
-                                                    marginRight:"0.5px", 
-                                                    borderRadius:"7px",
-                                                    display:"inline-block",
-                                                    margin: "0 auto",
-                                                    padding: "0",
-                                                    fontSize:"12px"
-                                                }} 
-                                                onClick={this.onReject}
-                                                basic color='black'>
-                                                <img style={{height:"12px", width:"12px"}} src={reject} />
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </Card.Content>
-                            </Card>
+                    <Card.Group  className="match_request_items">
+                        <Fade bottom cascade>
+                        <div id="req_item">
+                            <img id="req_img" src={person1} />
+                            <div id="req_info">
+                                <h1 id="req_name">Steven Parks</h1>
+                                <div id="req_sub_info">
+                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 29, 2021</strong></p>
+                                </div>
+                            </div>
+                            <button id="yes_button"><img src={accept} /></button>
+                            <button id="no_button"><img src={reject} /></button>
+                        </div>
+
+                        <div id="req_item">
+                            <img id="req_img" src={person2} />
+                            <div id="req_info">
+                                <h1 id="req_name">Kimberly Richards</h1>
+                                <div id="req_sub_info">
+                                    <p id="req_event">is requesting to connect for <strong>Intro to Vue.js</strong> on <strong>July 17, 2021</strong></p>
+                                </div>
+                            </div>
+                            <button id="yes_button"><img src={accept} /></button>
+                            <button id="no_button"><img src={reject} /></button>
+                        </div>
+
                         </Fade>                             
                     </Card.Group>
                 </Fade>

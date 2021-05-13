@@ -34,7 +34,7 @@
 }
 
 .profile_nav_items {
-    position: fixed;
+    position: fixed; 
     font-family: 'Raleway', sans-serif;
     text-align: center;
     justify-content: center;
@@ -49,7 +49,7 @@
 }
 
 #profile_events_link:hover {
-    color: #FFA69E;
+    color: #5e6472;
     transition: 1s;
 }
 

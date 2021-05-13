@@ -6,12 +6,10 @@
 
 #formtitle {
     font-family: 'Raleway', sans-serif;
-    /* background-color: red; */
 }
 
 #form{
     font-family: 'Raleway', sans-serif;
-    /* background-color: blue; */
     height: 500px;
     width: max-content;
 }

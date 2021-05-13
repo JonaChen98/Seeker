@@ -28,12 +28,24 @@
     margin-left: 25px;
     z-index: 10;
     color:black;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
 }
 
 .universal_nav_items {
-    position: fixed;
+    position: fixed; 
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    position: sticky;
+    margin-top: 4px;
+    z-index: 10;
+    color:black;
+    font-size: 13px;
+    font-weight: 600;
+    /* position: fixed;
     font-family: 'Raleway', sans-serif;
     text-align: center;
     justify-content: center;
@@ -43,8 +55,8 @@
     margin-top: 10px;
     z-index: 10;
     color:black;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 600; */
 }
 
 #universal_profile_link:hover,#universal_events_link:hover {

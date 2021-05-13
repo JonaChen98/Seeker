@@ -53,18 +53,13 @@ export default function EditProfile(props) {
         history.push('/user_profile')
     }
 
-    function prevPage(){
-        history.goBack()
-    }
-
     return(
         <>
-        <NavBar />
+        {/* <NavBar /> */}
             <div id="edit_profile">
-            <Fade left>
+            <Fade bottom>
                 <div id="tp">
                     <h1 id="edit_profile_title">settings</h1>
-                    <button id="edit_profile_back_button" onClick={prevPage}>go back</button>
                 </div>
             </Fade>
             <Fade bottom cascade>
@@ -200,6 +195,7 @@ export default function EditProfile(props) {
                             <label className="edit_info_labels">
                                 bio
                             </label>
+                            <br />
                             <input className="edit_info_text_field" type="text" onChange={onChange} value={bio} name="bio" />
                         </div>
 
