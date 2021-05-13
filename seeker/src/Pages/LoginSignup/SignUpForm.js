@@ -29,7 +29,7 @@ class SignUpForm extends React.Component {
     render() {
         return (
             <div className="login-signup-form">
-                <form>
+                <form style={{textAlign:"left"}}>
                     <label className="signup_labels">
                         email
                     </label>

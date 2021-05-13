@@ -1,6 +1,7 @@
 import React from 'react'
 import './matchrequests.css'
 import person1 from '../../images/person1.jpeg'
+import person2 from '../../images/person5.jpeg'
 import accept from '../../images/check.png'
 import reject from '../../images/reject.png'
 
@@ -42,7 +43,7 @@ class MatchRequests extends React.Component {
                             <div id="req_info">
                                 <h1 id="req_name">Steven Parks</h1>
                                 <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
+                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 29, 2021</strong></p>
                                 </div>
                             </div>
                             <button id="yes_button"><img src={accept} /></button>
@@ -50,215 +51,11 @@ class MatchRequests extends React.Component {
                         </div>
 
                         <div id="req_item">
-                            <img id="req_img" src={person1} />
+                            <img id="req_img" src={person2} />
                             <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
+                                <h1 id="req_name">Kimberly Richards</h1>
                                 <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
-                                </div>
-                            </div>
-                            <button id="yes_button"><img src={accept} /></button>
-                            <button id="no_button"><img src={reject} /></button>
-                        </div>
-
-                        <div id="req_item">
-                            <img id="req_img" src={person1} />
-                            <div id="req_info">
-                                <h1 id="req_name">Steven Parks</h1>
-                                <div id="req_sub_info">
-                                    <p id="req_event">is requesting to connect for <strong>Pottery Class</strong> on <strong>June 23, 2021</strong></p>
+                                    <p id="req_event">is requesting to connect for <strong>Intro to Vue.js</strong> on <strong>July 17, 2021</strong></p>
                                 </div>
                             </div>
                             <button id="yes_button"><img src={accept} /></button>

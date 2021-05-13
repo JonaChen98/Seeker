@@ -14,12 +14,17 @@ import newyork from '../../images/newyork.jpeg'
 import twopeople from '../../images/twopeople.jpeg'
 import hands from '../../images/hands.jpeg'
 import display from '../../images/display.jpeg'
+import planepath from '../../images/planepath.jpeg'
 import yoga from '../../images/yoga.jpeg'
 import yellow from '../../images/yellow.jpeg'
 import nathans from '../../images/nathans.jpeg'
 import volunteer1 from '../../images/volunteer1.jpeg'
 import wine from '../../images/wine.jpeg'
 import friendGroup from '../../images/threepeople.jpeg'
+import fest from '../../images/musicfest.jpeg'
+import group from '../../images/group.jpeg'
+
+import map from './map2.jpeg'
 
 class LandingPage extends React.Component
 {
@@ -32,7 +37,7 @@ class LandingPage extends React.Component
     render(){
         return(
             <>
-                <div>
+                <div style={{height:"115vh"}}>
                     <div id="top">
                         <Fade><p className ="landing_seeker">Seeker</p></Fade>
                         <Link to="/aboutus">
@@ -60,7 +65,7 @@ class LandingPage extends React.Component
                             {/* </div> */}
                         </div>
                     </div>
-                    <div id="landing_page_top" style={{width:"100vw", height:"106vh"}}>
+                    <div id="landing_page_top" style={{width:"100vw", height:"100vh"}}>
                         <div id="quote_subquote">
                             <Fade>
                                 <h1 id="landing_quote">Everything's better with friends</h1>
@@ -121,38 +126,33 @@ class LandingPage extends React.Component
                     </div>
                 </div>
                 <div style={{height:"max-content", zIndex:"5"}}>
-                <div style={{backgroundColor: "#F5F5F5"}} className="about_us">
-                    <Fade>
-                        <h2>About Us</h2>
-                        <p>As busy Americans it can be challenging to coordinate schedules and plan and schedule trips and activities with friends and families. This can be particularly irritating if there's an event you really really really want to attend, but can't find anyone to go with... <em>*cue the sad music*</em> <br /> <br /> 
-                        Seeker allows users to match with other users for the sole purpose of finding a friend to enjoy an activity with. Now instead of staying in on your day off because none of your friends are free to hang out, you can use seeker to meet new people who can accommodate to your schedule.</p>
-                        {/* <h3>But stress no more and say good bye to doing things alone!</h3> */}
-                    </Fade>
-                </div>
                 <div style={{backgroundColor: "#F5F5F5"}}  className="using">
-                    <h2>Using Seeker</h2>
-                    <Fade left cascade>
-                    <div id="four_imgs">
-                        <div id="eeee">
-                            <img id="first_img" src={newyork} />
-                            <p className="desc">find an event you would like go to</p>
+                    <h2>About Seeker</h2>
+                    <img id="plane" src={planepath}/>
+                    <Fade>
+                    <div style={{position:"absolute",display:"flex",flexFlow:"row",marginTop:"7vh"}}>
+                        <div style={{height:"100vh", width:"50vw"}}>
+                            <img id="using_first" src={map} />
+                            <img id="using_third" src={fest} />
                         </div>
-                        <div id="eeee">
-                            <img id="second_img" src={twopeople} />
-                            <p className="desc">see who else is attending</p>
+                        <div style={{marginTop:"5vh",marginLeft:"-5vw"}}>
+                            <p style={{fontWeight:"300"}}>You've been inside for over 13 months, and now <br /> you're itching to get out, meet new people, <br /> do fun things</p>
+                            <p style={{fontWeight:"300"}}>We're here to help you help with just that!</p>
                         </div>
-                        <div id="eeee">
-                            <img id="third_img" src={display} />
-                            <p className="desc">send them a request</p>
+                    </div>
+                    <div style={{position:"relative",display:"flex",flexFlow:"row"}}>
+                        <div style={{marginTop:"55vh",marginLeft:"15vw"}}>
+                            <p style={{fontWeight:"300"}}>We're here to help you find events for you to attend...</p>
                         </div>
-                        <div id="eeee">
-                            <img id="third_img" src={display} />
-                            <p className="desc">et voila!</p>
+                    </div>
+
+                    <div style={{position:"absolute",display:"flex",flexFlow:"row",marginTop:"90vh"}}>
+                        <div style={{height:"50vh", width:"50vw"}}>
+                            <img id="using_first" src={group} />
                         </div>
-                        {/* <div id="eeee">
-                            <img id="fourth_img" src={hands} />
-                            <p className="desc">here is some text</p>
-                        </div> */}
+                        <div style={{marginTop:"13vh",marginLeft:"-2vw"}}>
+                            <p style={{fontWeight:"300"}}>...and people for you to attend them with</p>
+                        </div>
                     </div>
                     </Fade>
                 </div>

@@ -29,7 +29,7 @@ class LoginForm extends React.Component
         return(
             <>
                 <div className="login-container" className="login-signup-form">
-                    <form> 
+                    <form style={{textAlign:"left"}}> 
                         <label className="login-item">username</label>
                         <br />
                         <input class="login_text_field login-item" type="text" name="username" />
