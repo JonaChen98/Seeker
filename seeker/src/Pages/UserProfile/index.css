@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;300;600&display=swap');
+
+body{
+    background-color: #F5F5F5;
+}
+
+#user_dash_nav{
+    width:78vw;
+    position: fixed;
+    height: 88vh;
+    margin-left: 21vw;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    /* background-color: teal; */
+    justify-content: center;
+}
+
+#user_dash_items_{
+    /* margin-top: 200px; */
+    width:78vw;
+    position: fixed;
+    height: 81vh;
+    margin-left: 21vw;
+    margin-top: 17vh;
+    display: flex;
+    justify-content: center;
+    /* background-color: coral; */
+    justify-content: center;
+}
+
+#dash_options{
+    display: flex;
+    flex-flow: row;
+    width: 60vw;
+    height: 30px;
+    margin-top: 5px;
+    /* background-color: crimson; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dash_section_title{
+    font-size: 15px;
+}
+
+.dash_nav_button{
+    border: none;
+    background-color: transparent;
+}
+
+#to_events:hover,#to_matches:hover,#to_reqs:hover{
+    color:#ffa69e;
+    transition: 1s;
+}
+
+#user_profile_things::-webkit-scrollbar {
+    width: 0em;
+    background-color: transparent;
+    height:0em;
+}
+
+#user_profile_things::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+    border-radius: 12px;
+}
+
+#user_profile_things::-webkit-scrollbar-thumb {
+    background-color: #AAA;
+    outline: 0px solid #555B6E;
+    border-radius: 12px;
+}
+
+#user_profile_things {
+    overflow: scroll;
+}
+
+.match_request_items::-webkit-scrollbar {
+    width: 0em;
+    background-color: transparent;
+    height:0em;
+}
+
+.match_request_items::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+    border-radius: 12px;
+}
+
+.match_request_items::-webkit-scrollbar-thumb {
+    background-color: #AAA;
+    outline: 0px solid #555B6E;
+    border-radius: 12px;
+}

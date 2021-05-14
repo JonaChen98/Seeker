@@ -1,0 +1,25 @@
+.grid_img_container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    /* padding: 0 4px; */
+    max-width: 18vw;
+    overflow: hidden;
+    background-color: #BEE3DB;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    /* overflow: hidden; */
+    flex: 25%;
+    max-width: 25%;
+    /* padding: 0 4px; */
+}
+
+.img {
+    /* overflow: hidden; */
+    /* margin-top: 8px; */
+    vertical-align: middle;
+    width: 100%;
+    /* filter: brightness(94%); */
+}

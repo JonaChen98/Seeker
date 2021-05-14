@@ -1,0 +1,16 @@
+#loading_page_div{
+    height:inherit;
+    width:inherit ;
+    z-index:10 ;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ball_triangle{
+    color:#aed9e0;
+    height: 70px;
+    width: 70px;
+    margin-top: -20px;
+}
