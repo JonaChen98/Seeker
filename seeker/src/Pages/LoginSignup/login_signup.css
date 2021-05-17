@@ -27,10 +27,10 @@
 #form {
   font-family: 'Raleway', sans-serif;
   width: max-content;
-  text-align: right;
+  text-align: left;
   padding-top: 25vh;
   position: absolute;
-  padding-left: 100px;
+  padding-left: 75px;
   width: 18vw;
   display: flex;
   flex-flow: column;
@@ -44,7 +44,7 @@
   border: 1px solid #999999; 
   padding: 5px;
   border-radius: 5px;
-  text-align: right;
+  text-align: left;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
@@ -62,7 +62,7 @@
 
 .login_signup_button{
   font-family: 'Raleway', sans-serif;
-  border: 1px solid #5e6472;
+  border: 1px solid black;
   border-radius: 3px;
   height: 30px;
   width: 9vw;
@@ -75,26 +75,26 @@
   border: 1px solid #999999; 
   padding: 5px;
   border-radius: 5px;
-  text-align: right;
+  text-align: left;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
 
 #loginbutton {
-  background-color: #5e6472;
+  background-color: black;
   color:white;
   font-family: 'Raleway', sans-serif;
-  border: 1px solid #5e6472;
+  border: 1px solid black;
   border-radius: 3px;
   height: 30px;
   width: 4vw;
 }
 
 #start_seeking {
-  background-color: #5e6472;
+  background-color: black;
   color:white;
   font-family: 'Raleway', sans-serif;
-  border: 1px solid #5e6472;
+  border: 1px solid black;
   border-radius: 3px;
   height: 30px;
   width: 8vw;

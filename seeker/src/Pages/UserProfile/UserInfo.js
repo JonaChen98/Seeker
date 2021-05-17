@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './userinfo.css'
-import people from '../../images/threepeople.jpeg'
+import people from '../../images/person23.jpeg'
 import twitter from '../../images/twitter.png'
 import facebook from '../../images/facebook.png'
 import instagram from '../../images/instagram.png'
@@ -8,6 +8,8 @@ import { useHistory, location } from 'react-router-dom'
 
 import Fade from 'react-reveal/Fade';
 import { propTypes } from 'react-bootstrap/esm/Image'
+
+import { Link } from 'react-router-dom'
 
 function UserInfo (props) {
     const history = useHistory()
@@ -79,11 +81,11 @@ function UserInfo (props) {
                             <p id="user_devils_info">devil's lettuce: no</p>
                             <p id="user_drug_info">drugs: yes </p>
                             <h4 style={{marginTop:"25px"}} id="user_about_heading"> bio </h4> 
-                            <p id="user_bio">bio here</p>
+                            <p id="user_bio">Live in the sunshine</p>
                         </div>
                         <div id="profile_buttons">
                             <button onClick={props.setSettings} id="profile_edit_button">settings</button>
-                            <button onClick={logout_req} id="profile_logout_button">logout</button>
+                            <Link to="/"><button onClick={logout_req} id="profile_logout_button">logout</button></Link>
                         </div>
                     </div>
                 </Fade>

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;413;459;500;600&display=swap');
+
+#about_page{
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+
+#about_seeker_section{
+    position: relative;
+}
+
+#about_seeker_title,#meet_title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+#meet_team{
+    margin-top: 50px;
+    position: relative;
+}
+
+#people_divs{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.person {
+    background-color: white;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-left: 20px;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    width: 20%;
+}
+
+.person:hover{
+    background-color: #faf3dd;
+    transition:1s;
+}
+
+.person_name{
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    color:black;
+}
+
+a{
+    color:black;
+}
+
+.person > p {
+    font-family: 'Raleway', sans-serif;
+    padding:0%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.person_img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+}
