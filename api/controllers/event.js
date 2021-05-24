@@ -2,28 +2,24 @@ const express = require('express');
 const router = express.Router();
 const { Event } = require('../models');
 
-// There are other styles for creating these route handlers, we typically
-// explore other patterns to reduce code duplication.
-// TODO: Can you spot where we have some duplication below?
+// get ALL events
+router.get('/', (req,res) => {
+    const events = Event.findAll()
+        .then(events => res.json(events));
+    
+});
 
-// this endpoint is for adding events to the db
-// input: name, time, description, location, lat, long
-// check if an event name already exists
-// router.post('/create_event', (req,res) => {
-//     Event.create({
-//         name: req.body.name,
-//         time: req.body.time,
-//         description: req.body.description,
-//         location: req.body.location,
-//         lat: req.body.lat,
-//         long: req.body.long
-//     })
-//     .then(event => {
-//         res.status(201).json(event);
-//     })
-//     .catch(err => {
-//         res.status(400).json(err);
-//     });
-// });
+// get an event by its ID
+router.get('/:id', (req,res) => {
+    const {id} = req.params;
+    Event.findByPk(id)
+        .then(event => {
+            if (!event) {
+                return res.sendStatus(404);
+            }
+
+            res.json(event);
+        });
+});
 
 module.exports = router;
