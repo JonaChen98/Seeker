@@ -52,6 +52,10 @@ module.exports = (sequelize, DataTypes) => {
         }
     },
 
+    imagePath: {
+      type: DataTypes.STRING
+    }
+
   }, {
     sequelize,
     modelName: 'event'
