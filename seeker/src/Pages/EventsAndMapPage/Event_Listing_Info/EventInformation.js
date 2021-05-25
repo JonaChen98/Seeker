@@ -18,7 +18,7 @@ export default function EventInformation(props) {
     return(
         <>
         <div> 
-            { showDescript && <EventDescription handleGoing={handleGoing} handleClick={handleClick} /> }
+            { showDescript && <EventDescription handleGoing={handleGoing} handleClick={handleClick} {...props}/> }
             { !showDescript && <AttendeeList handleClick={handleClick} /> }
         </div>
         </>

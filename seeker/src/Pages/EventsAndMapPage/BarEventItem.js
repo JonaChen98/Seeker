@@ -47,7 +47,7 @@ export default function BarEventItem(props) {
                         <Card.Content>
                         <Card.Header>{props.name}</Card.Header>
                         <Card.Meta>{props.location}</Card.Meta>
-                        <Card.Meta>{props.time.slice(0, 10)}</Card.Meta>
+                        <Card.Meta>{props.date}</Card.Meta>
                         </Card.Content>
                         <Card.Content style={{color:"#5e6472", fontWeight:"400"}} extra onClick={openModal}>
                                 Click here for more
@@ -59,7 +59,7 @@ export default function BarEventItem(props) {
                             style={customStyles}
                             >
                             
-                            <EventInformation />
+                            <EventInformation {... props}/>
                         </Modal>
                     </Card>
                    
