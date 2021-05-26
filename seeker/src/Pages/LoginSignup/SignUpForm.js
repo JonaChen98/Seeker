@@ -1,5 +1,7 @@
+import { first } from 'lodash';
 import React from 'react'
 import {Link} from 'react-router-dom'
+import auth from '../../Services/auth';
 
 class SignUpForm extends React.Component {
     constructor(){
@@ -11,7 +13,7 @@ class SignUpForm extends React.Component {
             password: "",
             email:""
         }
-        this.handleSubmit = this.handleSubmit.bind(this)
+        // this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
     }
 
@@ -22,14 +24,21 @@ class SignUpForm extends React.Component {
         }) 
     }
 
-    handleSubmit(e){
-        alert('Successfully signed up', 2000);
+    // handleSubmit(e){
+    //     alert('Successfully signed up', 2000);
+    // }
+
+    signup = (e) => {
+        e.preventDefault();
+        let{firstName,lastName,gender,password,email} = this.state;
+        auth.signup(firstName,lastName,gender,password,email)
+        
     }
 
     render() {
         return (
             <div className="login-signup-form">
-                <form style={{textAlign:"left"}}>
+                <form onSubmit = {this.signup} style={{textAlign:"left"}}>
                     <label className="signup_labels">
                         email
                     </label>
@@ -74,9 +83,11 @@ class SignUpForm extends React.Component {
                     <input class="signup_text_field"  type="password" value={this.state.password} name="password" onChange={this.handleChange} />
 
                     <br /><br />
-                    <Link to="/user_profile"><button id="start_seeking" type="submit" value="start seeking">start seeking</button></Link>
-                    
-
+                    {/* <Link to="/user_profile"> */}
+                        <button id="start_seeking" type="submit" value="start seeking">start seeking</button>
+                        {/* </Link> */}
+                  
+                
                 </form>
             </div>
         )

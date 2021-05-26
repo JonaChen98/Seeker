@@ -8,6 +8,7 @@ import LandingPage from './Pages/Landing/LandingPage'
 import EditProfile from './Pages/UserProfile/EditProfile'
 import AboutTeam from './Pages/AboutTeam/about'
 
+
 export default function AppRouter() {
     return (
         //  <>

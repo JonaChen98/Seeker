@@ -7,6 +7,7 @@ const router = express.Router();
 const appConfigController = require('./appConfig.js');
 const authController = require('./auth.js');
 const eventController = require('./event.js');
+const profileController = require('./Profile.js')
 
 // Mount each controller under a specific route. These
 // will be prefixes to all routes defined inside the controller
@@ -14,6 +15,7 @@ const eventController = require('./event.js');
 // router.use('/posts', postsController);
 router.use('/application-configuration', appConfigController);
 router.use('/auth', authController);
+router.use('/Profile', profileController);
 router.use('/event', eventController);
 
 module.exports = router;

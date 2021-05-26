@@ -1,24 +1,59 @@
 const express = require('express');
+const cors = require('cors')
 const expressSession = require('express-session');
 const morgan = require('morgan');
 const path = require('path');
 const db = require('./models');
 const passport = require('./middlewares/authentication');
-const app = express();
+const app=express().use('*', cors());
 const PORT = process.env.PORT;
 const seed = require('./seed');
+const User = require('./models').User;
+const cookieParser = require("cookie-parser");
+
 
 
 // this lets us parse 'application/json' content in http requests
+
 app.use(express.json());
 
+
+
+// app.use(function (req, res, next) {
+//   res.setHeader('Access-Control-Allow-Origin', '*');
+//   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+//   res.setHeader('Access-Control-Allow-Methods', 'POST, GET, PATCH, DELETE, OPTIONS');
+//   next();
+// });
+
+
 // setup passport and session cookies
+app.use(cookieParser());
 app.use(expressSession({
   secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: true }));
+  // app.use(require('cookie-parser'));
 app.use(passport.initialize());
 app.use(passport.session());
+
+// passport.serializeUser((user, done) => {
+//   done(null, user.id);
+// });
+
+// passport.deserializeUser((id, done) => {
+//   User.findByPk(id)
+//     .then((user) => {
+//       if (!user) {
+//         done(null, false);
+//         return;
+//       }
+
+//       done(null, user);
+//       return;
+//     })
+//     .catch(err => done(err, null));
+// });
 
 // add http request logging to help us debug and audit app use
 const logFormat = process.env.NODE_ENV==='production' ? 'combined' : 'dev';

@@ -43,6 +43,7 @@ passport.use(new LocalStrategy({
 );
 
 passport.serializeUser((user, done) => {
+  console.log('serialized')
   done(null, user.id);
 });
 
@@ -53,12 +54,18 @@ passport.deserializeUser((id, done) => {
         done(null, false);
         return;
       }
-
+      console.log('deserialized')
       done(null, user);
       return;
     })
     .catch(err => done(err, null));
 });
+// passport.deserializeUser(function(id, done) {
+//   User.findById(id, function(err, user) {
+//     console.log('deserialized')
+//     done(err, user);
+//   });
+// });
 
 // Use this protect api routes that require a user to be logged in.
 passport.isAuthenticated = () => 

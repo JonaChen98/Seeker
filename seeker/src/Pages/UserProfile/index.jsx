@@ -6,6 +6,7 @@ import UserMatches from './UserMatches'
 import Navbar from './Navbar'
 import './index.css'
 import EditProfile from './EditProfile'
+import fetchprofile from '../../Services/profile'
 
 class UserProfile extends React.Component {
     constructor() {
@@ -73,6 +74,10 @@ class UserProfile extends React.Component {
             requestsTextColor: "#ffa69e"
         })
     }
+
+    // fetchuserinfo(){
+    //     fetchprofile.fetchname()
+    // } // replaced this.setShowEvents
 
     render() {
         return (
