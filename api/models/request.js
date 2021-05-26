@@ -21,15 +21,9 @@ module.exports = (sequelize, DataTypes) => {
     //       },
     // },
     status: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.BOOLEAN,
         validate: {
-            len: [1,1],
-            notEmpty: true,
-          },
-    },
-    timestamp: {
-        type: DataTypes.DATE,
-        validate: {
+            //len: [1,1],
             notEmpty: true,
           },
     },
