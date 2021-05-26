@@ -17,17 +17,17 @@ class EventsBar extends React.Component {
         }
     }
 
-    // componentDidMount(){
-    //     fetch("api link here")
-    //         .then(res => res.json())
-    //         .then(events => {
-    //             this.setState({
-    //             loading: false,
-    //             events: events.map((p,ii) => <BarEventItem {...p} key={ii} />),
-    //             });
-    //         })
-    //         .catch(err => console.log("API ERROR: ", err));
-    // }
+    componentDidMount(){
+        fetch("http://localhost:8080/api/event")
+            .then(res => res.json())
+            .then(events => {
+                this.setState({
+                loading: false,
+                events: events.map((p,ii) => <BarEventItem {...p} key={ii} />),
+                });
+            })
+            .catch(err => console.log("API ERROR: ", err));
+    }
 
     render(){
         return(
@@ -35,7 +35,9 @@ class EventsBar extends React.Component {
                 <div id="events_bar_container">
                     {/* Display Loading component while everything is getting fetched */}
                     {/* <Loading /> */} 
-                    <BarEventItem />
+                    {/* <BarEventItem /> */}
+                    {this.state.events}
+                    {/* {console.log(this.state.events[0])} */}
                 </div>
                 {/* <EventInformation /> */}
             </>

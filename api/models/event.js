@@ -12,18 +12,33 @@ module.exports = (sequelize, DataTypes) => {
         len: [1, 250],
         notEmpty: true,
       }
+    },    
+    date: {
+      type: DataTypes.STRING,
+      validate: {
+        len: [1, 50],
+          notEmpty: true,
+      }
     },
     time: {
-        type: DataTypes.DATE,
+        type: DataTypes.STRING,
         validate: {
+          len: [1, 50],
             notEmpty: true,
         }
     },
 
+    host: {
+      type: DataTypes.STRING,
+      validate: {
+        len: [1, 250],
+          notEmpty: true,
+      }
+    },
+
     description: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         validate: {
-            len:[1,1000],
             notEmpty: true,
         }
     },
@@ -52,6 +67,10 @@ module.exports = (sequelize, DataTypes) => {
         }
     },
 
+    imagePath: {
+      type: DataTypes.STRING
+    }
+
   }, {
     sequelize,
     modelName: 'event'
@@ -60,6 +79,7 @@ module.exports = (sequelize, DataTypes) => {
   Event.associate = (models) => {
     // associations can be defined here
     models.Event.belongsToMany(models.User, {through: 'Attendance'}) // many users can belong to an event
+    // models.Event.hasOne(models.Attendance);
     models.Event.hasOne(models.Request);
   };
 

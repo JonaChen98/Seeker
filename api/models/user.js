@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
-    getFullname() {
+    getFullName() {
       return [this.firstName, this.lastName].join(' ');
     }
   }
@@ -21,6 +21,9 @@ module.exports = (sequelize, DataTypes) => {
       validate: {
         isEmail: true,
       }
+    },
+    imagePath: {
+      type: DataTypes.STRING
     },
     gender: {
       type: DataTypes.STRING,
@@ -53,6 +56,7 @@ module.exports = (sequelize, DataTypes) => {
   User.associate = (models) => {
     // associations can be defined here
     models.User.belongsToMany(models.Event, {through: 'Attendance'});
+    // models.User.hasOne(models.Attendance);
     models.User.hasOne(models.Request, {as: "requestor"});
     models.User.hasOne(models.Request, {as: "requestee"});
   };
