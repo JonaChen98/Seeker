@@ -26,6 +26,7 @@
 
 const express = require('express');
 const router = express.Router();
+
 const { Event, User } = require('../models');
 
 // get all users attending an event with a specified ID
@@ -42,6 +43,7 @@ router.get('/', (req,res) => {
 
         res.json(users);
     })
+
 });
 
 module.exports = router;
