@@ -79,6 +79,7 @@ module.exports = (sequelize, DataTypes) => {
   Event.associate = (models) => {
     // associations can be defined here
     models.Event.belongsToMany(models.User, {through: 'Attendance'}) // many users can belong to an event
+    // models.Event.hasOne(models.Attendance);
     models.Event.hasOne(models.Request);
   };
 

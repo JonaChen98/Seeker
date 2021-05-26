@@ -12,6 +12,7 @@ router.use(function(req, res, next) {
 const appConfigController = require('./appConfig.js');
 const authController = require('./auth.js');
 const eventController = require('./event.js');
+const connectController = require('./connect.js');
 
 // Mount each controller under a specific route. These
 // will be prefixes to all routes defined inside the controller
@@ -20,5 +21,6 @@ const eventController = require('./event.js');
 router.use('/application-configuration', appConfigController);
 router.use('/auth', authController);
 router.use('/event', eventController);
+router.use('/connect', connectController);
 
 module.exports = router;

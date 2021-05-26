@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './EventInfo.css'
-import pottery from '../../../images/pottery.jpeg'
 
 export default function EventDescription(props) {
     const [isGoing, setIsGoing] = useState(false)

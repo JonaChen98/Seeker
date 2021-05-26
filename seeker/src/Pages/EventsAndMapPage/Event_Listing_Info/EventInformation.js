@@ -19,7 +19,10 @@ export default function EventInformation(props) {
         <>
         <div> 
             { showDescript && <EventDescription handleGoing={handleGoing} handleClick={handleClick} {...props}/> }
-            { !showDescript && <AttendeeList handleClick={handleClick} /> }
+            
+            {/* {props.users.map((u, ii) => !showDescript && <AttendeeList user={u} handleClick={handleClick} />)} */}
+            
+            { !showDescript && <AttendeeList handleClick={handleClick} {...props}/> }
         </div>
         </>
     )

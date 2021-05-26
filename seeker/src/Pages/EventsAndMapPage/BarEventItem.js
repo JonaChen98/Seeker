@@ -36,7 +36,6 @@ export default function BarEventItem(props) {
     }
 
     let eventImage = "eventImages/" + props.imagePath;
-
     return(
         <>
             <Fade bottom>
