@@ -35,7 +35,7 @@ router.post('/', (req, res) => {
 });
 
 
-router.get('/:id', (req, res) => {
+router.get('/:123', (req, res) => {
   const { id } = req.params;
   Post.findByPk(id)
     .then(post => {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './userinfo.css'
 import people from '../../images/person23.jpeg'
 import twitter from '../../images/twitter.png'
@@ -29,6 +29,26 @@ function UserInfo (props) {
         email:"katy@aol.com"
     })
 
+    useEffect(() => {
+        fetchProfile()
+    }, [] )
+
+    async function fetchProfile(){
+        try{
+            console.log(localStorage)
+            const response = await fetch('http://localhost:8080/api/Profile/getUserId',{
+                method: 'GET'
+            })
+          } catch(err) {
+            console.log(err);
+          }
+    }
+
+
+
+
+
+
     const { profile_picture, first_name, last_name, email, instagram_link, twitter_link, facebook_link, gender,drinks, devils_lettuce, drugs, bio } = info
 
     function goToEditPage() {
@@ -54,6 +74,7 @@ function UserInfo (props) {
     function logout_req() {
         alert("logging out now")
     }
+
 
     return (
         <>  
