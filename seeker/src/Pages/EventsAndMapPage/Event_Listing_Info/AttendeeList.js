@@ -1,16 +1,6 @@
 import React from 'react'
 import './AttendeeList.css'
 import '../../UserProfile/matchrequests.css'
-import person1 from '../../../images/person1.jpeg'
-import person2 from '../../../images/person2.jpeg'
-import person3 from '../../../images/person3.jpeg'
-import person4 from '../../../images/person4.jpeg'
-import person5 from '../../../images/person5.jpeg'
-import person6 from '../../../images/person6.jpeg'
-import person7 from '../../../images/person7.jpeg'
-import person8 from '../../../images/person8.jpeg'
-
-
 
 import 'semantic-ui-css/semantic.min.css'
 import { Button, Card, Image } from 'semantic-ui-react'
@@ -34,21 +24,6 @@ function Person(props) {
                     e.target.style.backgroundColor = "#bee3db";
                     alert("sent");
                 }
-            })
-            .catch(err => console.log("API ERROR: ", err));
-    }
-
-    function checkForOldRequests() {
-        const requestOptions = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ 	eventId: props.eventId, requesteeId: props.user.id })
-        };
-        fetch('http://localhost:8080/api/connect', requestOptions)
-            .then(response => {
-                // response.json();
-                if (response.status === 200)
-                    return "#bee3db";
             })
             .catch(err => console.log("API ERROR: ", err));
     }
@@ -113,7 +88,6 @@ function Person(props) {
                             backgroundColor: "transparent",
                             fontSize:"12px"
                         }} onClick={sendRequest}>
-                            {checkForOldRequests}
                             Connect
                     </button>
                 </div>

@@ -7,6 +7,28 @@ export default function EventDescription(props) {
     function handleGoing(){
         setIsGoing(!isGoing)
         props.handleGoing()
+
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 	eventId: props.id})
+        };
+
+        if (isGoing) {
+            fetch('http://localhost:8080/api/event/going', requestOptions)
+                .then(response => {
+                    response.json();
+                })
+                .catch(err => console.log("API ERROR: ", err));
+        }
+
+        else {
+            fetch('http://localhost:8080/api/event/not_going', requestOptions)
+                .then(response => {
+                    response.json();
+                })
+                .catch(err => console.log("API ERROR: ", err));
+        }
     }
 
     let eventImage = "eventImages/" + props.imagePath;

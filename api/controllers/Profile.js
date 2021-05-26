@@ -16,8 +16,8 @@ const passport = require('../middlewares/authentication')
 
 router.get('/getUserId', (req, res) => {
     console.log("hello")
-    const { id } = 1
-    User.findByPk( id )
+    const id = 7;
+    User.findByPk(id)
         .then(user => {
             if(!user) {
                 console.log("no user")

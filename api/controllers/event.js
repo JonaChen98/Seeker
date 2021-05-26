@@ -46,4 +46,42 @@ router.get('/', (req,res) => {
 
 });
 
+// user is going to an event
+router.post('/going', (req,res) => {
+    const eventId = req.body.eventId;
+    const userId = 7; // get from session
+
+    Event.findByPk(eventId)
+        .then(e => {
+            User.findByPk(userId)
+                .then(u => {
+                    e.addUser(u);
+                    res.status(201).end();
+                })
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(400).json(err);
+        })
+});
+
+// user is not going to an event
+router.post('/not_going', (req,res) => {
+    const eventId = req.body.eventId;
+    const userId = 7; // get from session
+
+    Event.findByPk(eventId)
+        .then(e => {
+            User.findByPk(userId)
+                .then(u => {
+                    e.removeUser(u);
+                    res.status(200).end();
+                })
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(400).json(err);
+        })
+});
+
 module.exports = router;
